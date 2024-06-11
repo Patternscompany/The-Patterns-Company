@@ -731,6 +731,7 @@ place-items: center;
 
 .team-image{
     text-align: center;
+    width: 100%;
 }
 
 .team-image img{
