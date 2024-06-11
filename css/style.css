@@ -1058,6 +1058,9 @@ html,body{
     font-family: 'Heebo',sans-serif;
     /* overflow-x: hidden; */
 }
+body{
+    overflow-x: hidden;
+}
 .container{
     @media (max-width:992px){
     /* padding: 0;
