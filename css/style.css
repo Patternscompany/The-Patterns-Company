@@ -731,6 +731,11 @@ place-items: center;
 
 .team-image{
     text-align: center;
+    width: 100%;
+}
+
+.team-image img{
+    width: 100%;
 }
 
 .team-img {
@@ -1053,6 +1058,9 @@ html,body{
     font-family: 'Heebo',sans-serif;
     /* overflow-x: hidden; */
 }
+body{
+    overflow-x: hidden;
+}
 .container{
     @media (max-width:992px){
     /* padding: 0;
@@ -1065,11 +1073,11 @@ html,body{
 .navbar-nav .dropdown-menu.show{
     display: block;
 }
-.container-fluid{
+/* .container-fluid{
     @media (min-width:992px){
         overflow: hidden;
     }
-}
+} */
 
 #main{
     width: 100%;
