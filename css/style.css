@@ -733,6 +733,10 @@ place-items: center;
     text-align: center;
 }
 
+.team-image img{
+    width: 100%;
+}
+
 .team-img {
     border: 15px solid var(--bs-white);
 }
