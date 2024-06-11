@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Digital marketing - The Patterns Company </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+ <!-- Navbar Start -->
+ <div class="container-fluid bg-primary sticky">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+                <!-- <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1> -->
+                <img src="./img/logo-white-lack.png" alt="" style="width: 200px;">
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
+                    <div class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown active ">Services</a>
+                        <div class="dropdown-menu rounded">
+                            <a href="webdevelopment.html" class="dropdown-item" style="background-color:#7ED958;">
+                                Web Development 
+                            </a>
+                            <a href="appdevelopment.html" class="dropdown-item" style="background-color:#7ED958;">
+                                App Development 
+                            </a>
+                            <a href="socialmediamarketing.html" class="dropdown-item" style="background-color:#7ED958;">SMM (Social Media Marketing) 
+                                </a>
+                            <a href="searchengineoptimization.html" class="dropdown-item" style="background-color:#7ED958;">SEO (Search Engine Optimization) 
+                            </a>
+                                
+                            <a href="ecommerce.html" class="dropdown-item" style="background-color:#7ED958;">
+                                E-Commerce 
+                            </a>
+                            <a href="graphicdesigning.html" class="dropdown-item" style="background-color:#7ED958;">
+                                Graphic Designing
+                            </a>
+                            <a href="googleads.html" class="dropdown-item" style="background-color:#7ED958;">Google Ads 
+                            </a>
+
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="internship.html" class="nav-item nav-link active">Internship</a>
+                    <a href="careers.html" class="nav-item nav-link">Careers</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shirink-0">
+                <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                    <a href="" class="position-relative animated tada infinite">
+                        <i class="fa fa-phone-alt text-white fa-2x"></i>
+                        <div class="position-absolute" style="top: -7px; left: 20px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center ms-4 ">
+                    <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+    <div class="whatsapp">
+        <a href="https://wa.me/+918500693113">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <style>
+        .job {
+            background-color: #7ED958;
+            color: #000000;
+            border: 2px solid #000000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding-left: 450px;
+
+            @media (max-width: 992px) {
+                padding-left: 20px;
+            }
+        }
+
+        .job-item-details {
+            border: 2px solid #000000;
+            border-top: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            display: none;
+        }
+
+        .roles-responsibilities li {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+
+        ::selection {
+            background-color: #7ED958;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .roles-responsibilities li {
+            color: #000000;
+        }
+
+        .job-role {
+            color: #000000;
+            padding-top: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="container pt-3">
+        <h1 class="mb-4">MARKETING</h1>
+        <h5>Job Roles</h5>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-column jutify-content-center mb-4">
+                <div class="job-container">
+                    <div class="job">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Business Development Executive(BDE)</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Find And Seize New Business Chances In The Website Design And Digital Marketing
+                                Industries.
+                            </li>
+                            <li>
+                                Establish And Preserve A Solid Rapport With Clients By Getting To Know Their Needs And
+                                Offering Specialized Solutions.
+                            </li>
+                            <li>
+                                Here­ is the plan to get more mone­y and hit the sales goals. Make a strong plan to do be­tter each year. Le­ad the team to mee­t the targets. Make sure­ each person.
+                            </li>
+                            <li>
+                                Work Together With The Marketing Team To Develop Campaigns And Collateral That Are
+                                Successful.
+                            </li>
+                            <li>
+                                Keep Abreast Of Market Developments And Rivalry To Spot Openings And Prospective Growth
+                                Opportunities.
+                            </li>
+                            <li>
+                                Conduct market research to identify and carefully study possible customers.                            </li>
+                            <li>
+                                Make Sure Your Presentations Are Polished And Delivered To Potential Customers.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Demonstrated Expertise In Business Development In The Fields Of Website Design And
+                                Digital Marketing.
+                            </li>
+                            <li>
+                                Strong Grasp Of Website Building, Digital Marketing Tactics, And Related Technology.
+                            </li>
+                            <li>
+                                Outstanding Interpersonal And Communication Abilities, With The Capacity To Establish
+                                And Preserve Client Relationships.
+                            </li>
+                            <li>
+                                Demonstrated Ability To Reach And Surpass Sales Goals.
+                            </li>
+                            <li>
+                                Understanding Of Consumer Behavior In The Digital Sphere, Competitor Analysis, And
+                                Market Trends.
+                            </li>
+                            <li>
+                                A Goal-Oriented Mentality That Emphasizes Achieving Objectives And Fostering Corporate
+                                Expansion.
+                            </li>
+                            <li>
+                                A Bachelor’s Degree In Marketing, Business, Or A Similar Discipline.
+                            </li>
+                            <li>
+                                Proficiency With Other Pertinent Business Development Tools And CRM Applications.
+                            </li>
+                            <li>
+                                Utilizing Creative Thinking And Problem-Solving Abilities, Novel Solutions Can Be
+                                Developed For Clients.
+                            </li>
+                            <li>
+                                Capacity To Operate Both Individually And Cooperatively In A Team.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Business Development Manager(BDM)</p>
+                    </div>
+                    <div id="job-item2" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Create And Execute Well-Thought-Out Business Development Strategies To Propel The
+                                Expansion Of Digital Marketing And Website Design Services.
+                            </li>
+                            <li>
+                                To Meet Revenue Goals, Find And Seize New Business Possibilities, Build And Nurture
+                                Customer Relationships, And Negotiate Contracts.
+                            </li>
+                            <li>
+                                Work Together With Cross-Functional Teams To Guarantee Client Satisfaction And Project
+                                Delivery That Runs Smoothly.
+                            </li>
+                            <li>
+                                To take advantage of new opportunities, to keep up with market conditions, competitive activity and increasingly popular.
+                            </li>
+                            <li>
+                                Oversee The Development Of Persuasive Presentations And Proposals To Highlight The
+                                Company’s Strengths And Attract New Clients.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Demonstrated Expertise In Business Development In The Fields Of Website Design And
+                                Digital Marketing.
+                            </li>
+                            <li>
+                                Strong Familiarity With The Newest Trends, Tools, And Best Practices In Digital
+                                Marketing.
+                            </li>
+                            <li>
+                                Outstanding Interpersonal And Communication Abilities To Interact And Establish Rapport
+                                With Clients.
+                            </li>
+                            <li>
+                                Proven Capacity To Inspire And Guide Groups Of People To Meet Goals For Both Sales And
+                                Project Quality.
+                            </li>
+                            <li>
+                                A Strategic Mentality Combined With Analytical And Problem-Solving Skills.
+                            </li>
+                            <li>
+                                A Bachelor’s Degree In Marketing, Business, Or A Similar Discipline; A Graduate Degree
+                                Is Preferred.
+                            </li>
+                            <li>
+                                Proficiency With Project Management Tools And CRM Applications.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">On-Site Marketing</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Create And Implement On-Site Marketing Plans To Improve Our Digital Marketing And
+                                Website Design Services’ Internet Visibility.
+                            </li>
+                            <li>
+                                Make Sure Your Website Is Search Engine Optimized For Optimal Visibility And
+                                Interaction.
+                            </li>
+                            <li>
+                                Work with many teams to make­ good marketing plans for websites. The­se plans need to work we­ll together and do their job.
+                            </li>
+                            <li>
+                                Ke­ep an eye on how we­bsites are doing. Look at the numbe­rs and data to see what is working well and what ne­eds to change. Share the­se details and give ide­as to make things better ove­r time.
+                            </li>
+                            <li>
+                                Use User Experience Optimization And A/B Testing To Increase Lead Generation And
+                                Conversion.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Bachelor’s Degree In Business, Marketing, Or A Similar Discipline.
+                            </li>
+                            <li>
+                                A Track Record Of Success In On-Site Marketing For Digital Marketing And Website Design.
+                            </li>
+                            <li>
+                                Strong Familiarity With Website Analytics Tools And SEO Best Practices.
+                            </li>
+                            <li>
+                                Proficiency With Basic HTML/CSS And Content Management Systems, Such As WordPress.
+                            </li>
+                            <li>
+                                Possessing An Inventive Thinking And The Capacity To Produce Creative Concepts For
+                                On-Site Campaigns.
+                            </li>
+                            <li>
+                                Outstanding Interpersonal And Teamwork Abilities, With The Capacity To Function Well In
+                                A Group Setting.
+                            </li>
+                            <li>
+                                A Results-Oriented Strategy Emphasizing Data-Driven Decision-Making.
+                            </li>
+                            <li>
+                                Knowledge Of The Newest Developments In Digital Marketing Trends And Technologies.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a class="apply-now-btn" href="applynow.html" target="_blank">
+                        <button style="border: none; background-color: transparent;">Apply now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Start -->
+<section class="container-fluid footer  wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
+    <div class="container" style="max-width: 100%;">
+        <div class="row g-5 position-relative m-0 p-0">
+            <div class="col-lg-3 col-md-6 text-center m-0">
+                <a href="index.html">
+                    <img src="./img/tpchhhhhhhhh.png">
+                </a>
+                <h5 style="color:#f3f5f2"> THE
+                    PATTERNS COMPANY</h5>
+
+                <div class="d-flex hightech-link align-items-center justify-content-center py-3">
+                    <a href="https://www.facebook.com/webappdigitalmarketing"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThepatterns1"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-twitter text-primary"></i></a>
+                    <a href="https://www.instagram.com/thepatternscompany/"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6  m-0 py-5">
+                <a href="#" class="h3 " style="color:#7ED958">Quick Links</a>
+                <div class="mt-2 d-flex flex-row justify-content-around help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="./index.html" class="mb-2 text-white"></i>Home
+                        </a>
+                        <a href="./about.html" class="mb-2 text-white">About
+                        </a>
+                        <a href="./service.html" class="mb-2 text-white">Services
+                        </a>
+                        <a href="./blog.html" class="mb-2 text-white">Blog</a>
+                       
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                                             <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
+                        <a href="./careers.html" class="mb-2 text-white">Careers</a>
+                        <a href="./contact.html" class="mb-2 text-white">Contact
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6  m-0 py-5">
+                <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
+                <div class="mt-2 d-flex flex-row justify-content-center help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
+                        <a href="appdevelopment.html" class="mb-2 text-white">App Development
+                        </a>
+
+                        <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media
+                            Marketing</a>
+                        <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
+                            Optimization</a>
+                      
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                       
+                        <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
+                        <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
+                        <a href="googleads.html" class="mb-2 text-white">Google Ads
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
+
+            </div>
+        </div>
+
+        <hr class="text-light mt-4 mb-4">
+        <div class="row pb-3">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" style="color:#7ED958"><i class="fas fa-copyright me-2"></i>Copy
+                        Rights</a>, All
+                    right
+                    reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <span class="text-light">Designed By <a href="" style="color:#7ED958">THE
+                        PATTERNS COMPANY</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const jobs = document.querySelectorAll(".job");
+
+        jobs.forEach(job => {
+            job.addEventListener("click", () => {
+                // Close all other active jobs
+                jobs.forEach(otherJob => {
+                    if (otherJob !== job) {
+                        otherJob.nextElementSibling.classList.remove('active');
+                    }
+                });
+
+                // Toggle the active class for the clicked job
+                job.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

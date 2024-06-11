@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Patterns Company - IT Solutions </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+   
+
+ <!-- Navbar Start -->
+ <div class="container-fluid bg-primary sticky">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+                <!-- <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1> -->
+                <img src="./img/logo-white-lack.png" alt="" style="width: 200px;">
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                   
+                    <div class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu rounded" style="background-color: #000000; ">
+                            <a href="webdevelopment.html" class="dropdown-item king"  >
+                                Web Development
+                            </a>
+                            <a href="appdevelopment.html" class="dropdown-item king">
+                                App Development
+                            </a>
+                            <a href="socialmediamarketing.html" class="dropdown-item king"
+                                >SMM (Social Media Marketing)
+                            </a>
+                            <a href="searchengineoptimization.html" class="dropdown-item king"
+                                >SEO (Search Engine Optimization)
+                            </a>
+
+                            <a href="ecommerce.html" class="dropdown-item king">
+                                E-Commerce
+                            </a>
+                            <a href="graphicdesigning.html" class="dropdown-item king" >
+                                Graphic Designing
+                            </a>
+                            <a href="googleads.html" class="dropdown-item king">Google
+                                Ads
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            
+                    <a href="careers.html" class="nav-item nav-link">Careers</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shirink-0">
+                <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                    <a href="tel:+0123456789" class="position-relative animated tada infinite">
+                        <i class="fa fa-phone-alt text-white fa-2x"></i>
+                        <div class="position-absolute" style="top: -7px; left: 20px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center ms-4 ">
+                    <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+    <div class="whatsapp">
+        <a href="https://wa.me/+918500693113">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <style>
+       
+    </style>
+
+    <style>
+        .job {
+            background-color: #7ED958;
+            color: #000000;
+            border: 2px solid #000000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding-left: 500px;
+
+            @media (max-width: 992px){
+                padding-left: 20px;
+            }
+        }
+
+        .job-item-details {
+            border: 2px solid #000000;
+            border-top: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            display: none;
+        }
+
+        .roles-responsibilities li {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+
+        ::selection {
+            background-color: #7ED958;
+        }
+
+        .active {
+            display: block;
+        }
+        .roles-responsibilities li{
+            color: #000000;
+        }
+        .job-role{
+            color: #000000;
+            padding-top: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="container pt-3">
+        <h1 class="mb-4">DIGITAL MARKETING</h1>
+        <h5>Job Roles</h5>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-column jutify-content-center mb-4">
+                <div class="job-container">
+                    <div class="job">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Graphic Designer</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Design Aesthetically Pleasing And Captivating Content For Websites, Social Media
+                                Postings, And Digital Marketing Initiatives.
+                            </li>
+                            <li>
+                                Work Together To Comprehend The Needs And Goals Of The Project With The Web Development
+                                And Marketing Teams.
+                            </li>
+                            <li>Create And Preserve A Unified Brand Identity For Use On A Variety Of Media.
+                            </li>
+                            <li> We must le­arn about new things in technology and design. This he­lps us make strong visuals that stand out. We make gre­at visuals by knowing what is coming next. We study trends and ne­w ideas. Then, we can cre­ate unique visual.
+
+                            </li>
+                            <li>
+                                Within The Allotted Period, Provide Multimedia Content, Images, And Graphics Of The
+                                Highest Caliber.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Demonstrated Expertise As A Graphic Designer In A Web Design Or Digital Marketing
+                                Context.
+                            </li>
+                            <li>
+                                Expertise With Design Software That Is Widely Used In The Business, Such As Adobe
+                                Creative Suite (Photoshop, Illustrator, InDesign).
+                            </li>
+                            <li>
+                                Impressive Portfolio Displaying A Wide Variety Of Creative And Design Efforts.
+                            </li>
+                            <li>
+                                Knowledge Of Responsive Design Ideas And Web Design Principles.
+                            </li>
+                            <li>
+                                Good Interpersonal Skills And The Capacity To Collaborate In A Hectic Setting.
+                            </li>
+                            <li>
+                                Meticulous And With A Strong Sense Of Aesthetics And Coherence In Design.
+                            </li>
+                            <li>
+                                It Is Preferred To Have A Bachelor’s Degree In Graphic Design, Visual Arts, Or A Similar
+                                Discipline.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">SEO Analyst</p>
+                    </div>
+                    <div id="job-item2" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                To Choose The Target Words For Website Optimization, Do In-Depth Keyword Research.
+                            </li>
+                            <li>
+                                Use On-Page SEO Techniques, Such As Content Optimization, Header Tags, And Meta Tags.
+                            </li>
+                            <li>You can find ways to make your we­bsite better. Use­ tools like Google Analytics. These­ tools help you see how we­ll your website is doing. Look at things like how many pe­ople visit your site. See­ where people­ go on your site. See what page­s they look at.
+                            </li>
+                            <li>To Guarantee That Your SEO Tactics Are Successful, Keep Up With Industry Developments And Search Engine Algorithms.
+                            </li>
+                            <li>
+                                Content cre­ators and search engine e­xperts team up. They e­nhance website mate­rial. Optimizing makes content rank higher. Working in unison ge­ts better results.                            </li>
+                            <li>
+                                Create And Implement Link-Building Plans To Raise The Authority And Search Engine Rankings Of Your Websites.
+                            </li>
+                            <li>
+                                Data shows SEO importance; re­ports analyze, suggest deve­lopment. Tracking offers insights to enhance­ visibility. Simple sentence­s, complex goals - SEO evolution.                            </li>
+                            <li>
+                                Analyze Competitors To Find Opportunities And Dangers In The Digital Market.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Bachelor’s Degree In Business, Marketing, Or A Similar Discipline.
+                            </li>
+                            <li>
+                                A Track Record Of Success In Digital Marketing Roles Like To SEO Analyst Or Equivalent.
+                            </li>
+                            <li>
+                                Proficiency With SEO Tools, Including Moz, SEMrush, And Google Analytics.
+                            </li>
+                            <li>
+                                Strong Comprehension Of Ranking Variables And Search Engine Algorithms.
+                            </li>
+                            <li>
+                                Strong Analytical Abilities And The Capacity To Understand Data And Produce Insights That Can Be Put To Use.
+                            </li>
+                            <li>
+                                Outstanding Communication Abilities For Working With Multidisciplinary Teams.
+                            </li>
+                            <li>
+                                Familiarity With HTML, CSS, And The Fundamentals Of Website Creation.
+                            </li>
+                            <li>
+                                Meticulous And Focused On Meeting Deadlines In A Hectic Setting.
+                            </li>
+                            <li>
+                                A Mindset Of Constant Learning To Keep Up With Best Practices And Developments In The Business.
+                            </li>
+                            <li>
+                                SEO Or Similar Field Certification Is Advantageous.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">SMM Associate</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Create And Put Into Action Social Media Strategy To Increase Brand Awareness And Interaction.
+                            </li>
+                            <li>
+                                Produce And Select Interesting Material For A Range Of Social Media Channels.
+                            </li>
+                            <li>
+                                To Improve Campaigns, Track And Evaluate Social Media Performance Indicators.
+                            </li>
+                            <li>
+                                Work Together With Cross-Functional Departments To Match Marketing Objectives Overall With Social Media Initiatives.
+                            </li>
+                            <li>
+                                Stay informed about tre­nds. Offer fresh ideas to e­nhance social media's impact. We he­lp you consistently adapt. New challenge­s arise. Capitalize on opportunities. De­velop compelling content. Maximize­ your online presence­.                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Bachelor’s Degree In Communications, Marketing, Or A Similar Discipline.
+                            </li>
+                            <li>
+                                Demonstrated Expertise In Running Social Media Accounts For Customers Or Brands.
+                            </li>
+                            <li>
+                                Proficiency With Analytics And Tool Management For Social Media.
+                            </li>
+                            <li>
+                                Strong Communication Skills, Both In Writing And Speaking.
+                            </li>
+                            <li>
+                                A Creative Attitude And The Capacity To Produce Interesting, Shareable Material.
+                            </li>
+                            <li>
+                                Grasping search optimization tactics, we­b crafting ideas, and fresh digital marketing advance­s is vital. These ele­ments form the core know-how ne­eded nowadays.                            </li>
+                            <li>
+                                Capacity To Cooperate In A Team And Adjust To A Fast-Paced Setting.
+                            </li>
+                            <li>
+                                Proficiency With Graphic Design Tools Is Advantageous.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Content Creator</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Provide Interesting And Pertinent Content For Email Newsletters, Blog Posts, Social Media Updates, And Website Copy For Use In Digital Marketing Initiatives.
+                            </li>
+                            <li>
+                                Work Together With The Design Team To Provide Visually Appealing Material That Complements The Company’s Marketing Goals And Brand.
+                            </li>
+                            <li>
+                                To Ensure That Content Is Competitive And Fresh, Conduct Rigorous Research To Stay Up To Date On Industry Developments, Rivals, And Target Audience Preferences.
+                            </li>
+                            <li>
+                                Improve Online Presence And Organic Traffic To The Business Website By Optimizing Content For Search Engines (SEO).
+                            </li>
+                            <li>
+                                To Guarantee The Timely Delivery Of Excellent Content Across Several Platforms, Manage Content Calendars And Schedules.
+                            </li>
+                            <li>
+                                People­ should watch for key numbers that show how well conte­nt does. Then they can use­ those numbers to make conte­nt better. This will get more­ people to take action. Pe­ople should check how many people­ view, like, share, or comme­nt on content. If numbers are low, the­ content needs.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Track Record Of Success In A Content Creation Or Related Function, Ideally In A Digital Marketing Or Website Design Setting.
+                            </li>
+                            <li>
+                                Excellent Editing And Writing Abilities With A Strong Attention To Detail And A Thorough Knowledge Of Syntax, Punctuation, And Style.
+                            </li>
+                            <li>
+                                Knowledge Of SEO Best Practices And The Capacity To Strategically Use Keywords In Content.
+                            </li>
+                            <li>
+                                Competence With Content Management Systems (CMS) And A Foundational Understanding Of HTML.
+                            </li>
+                            <li>
+                                Strong Interpersonal And Teamwork Abilities To Collaborate And Communicate With Cross-Functional Teams.
+                            </li>
+                            <li>
+                                A Creative Mindset With The Capacity To Come Up With Novel Ideas And Adjust To Changing Market Trends.
+                            </li>
+                            <li>
+                                A Portfolio Exhibiting Various Content Production Initiatives Together With Their Effects On Audience Involvement And Corporate Goals.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Video Editor</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                To Create Professional, Interesting Content For A Variety Of Digital Marketing Campaigns And Internet Projects, Edit And Put Together Unfinished Video Material.
+                            </li>
+                            <li>
+                                Work Together With Creative Teams To Comprehend Project Specifications And Guarantee That The Visual Narrative Reflects The Brand’s Messaging.
+                            </li>
+                            <li>
+                                Keep Up With Industry Developments And Apply Creative Editing Methods To Raise The General Caliber Of Video Content.
+                            </li>
+                            <li>
+                                Organize And Manage Video Content To Guarantee Effective Processes And Simple Access For Later Usage.
+                            </li>
+                            <li>
+                                Deliver Excellent Video Material That Satisfies Project Objectives And Timelines By Collaborating Closely With The Marketing And Creative Teams.
+                            </li>
+                            <li>
+                                Refine And Enhance Video Editing Procedures On A Constant Basis To Maximize Effectiveness And Uphold High Production Standards.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Demonstrated Expertise As A Video Editor And A Solid Portfolio Of Imaginative And Powerful Work.
+                            </li>
+                            <li>
+                                Proficiency With Programs Like Adobe Premiere Pro, Final Cut Pro, Or Other Programs For Editing Videos and Others.                            </li>
+                            <li>
+                                People­ who are skilled at Digital Marketing know a lot about it. The­y can take goals for marketing and make storie­s with pictures that grab people's atte­ntion. People who are ve­ry good at Digital Marketing understand all the ke­y ideas.                            </li>
+                            <li>
+                                Knowledge Of Website Design Principles And The Capacity To Smoothly Incorporate Video Into Online Platforms.
+                            </li>
+                            <li>
+                                Excellent Creativity, Attention To Detail, And Teamwork Skills In A Deadline-Driven, Fast-Paced Work Environment.
+                            </li>
+                            <li>
+                                Good communication is key to work we­ll with teams from different parts of a company. You ne­ed skills to clearly share ne­w thoughts. Good communicators can get ideas across to others in simple­.                            </li>
+                            <li>
+                                Familiarity With The Formats, Distribution Techniques, And Compression Of Videos For A Range Of Web Platforms.
+                            </li>
+                            <li>
+                                Skills That Matter When It Comes To Adapting To The Ever-Changing World of Digital Marketing, Website Designing, Video Editing.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/contacticon.jpg" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">ADS Manger</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                To Accomplish Client Goals, Plan, Carry Out, And Optimize Digital Advertising Campaigns Across Several Platforms.
+                            </li>
+                            <li>
+                                Look at how well the­ campaign worked. Write a report about it. Say what worke­d great. Say what did not work so good. Give ideas to make­ it better next time­.                            </li>
+                            <li>
+                                Work Together With The Creative Team To Create Engaging Landing Pages And Ad Creatives.
+                            </li>
+                            <li>
+                                Stay on top of how the marke­t is changing and new ad tech that comes out. This will he­lp your campaigns work better. Markets change­ all the time. New adve­rt technology is made eve­ry day. If you know about the changes.                            </li>
+                            <li>
+                                Oversee Client Interactions And Communication To Make Sure Their Advertising Objectives Are Fulfilled.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Track Record Of Success In Digital Advertising, With An Emphasis On Social Media, Display, And PPC Advertising.
+                            </li>
+                            <li>
+                                Adept At Utilizing Advertising Networks Like Facebook Ads, Google Ads, And Others.
+                            </li>
+                            <li>
+                                Strong Analytical Abilities And The Capacity To Understand Data And Draw Conclusions That Are Useful.
+                            </li>
+                            <li>
+                                Knowledge Of Website Design Concepts To Match Advertising Campaigns To The Visual Appeal Of Websites.
+                            </li>
+                            <li>
+                                Exceptional Client Management And Communication Abilities.
+                            </li>
+                            <li>
+                                Current Understanding Of Best Practices And Developments In Digital Marketing.
+                            </li>
+                            <li>
+                                A Bachelor’s Degree In Advertising, Marketing, Or Similar Discipline.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a class="apply-now-btn" href="applynow.html" target="_blank">
+                        <button style="border: none; background-color: transparent;">Apply now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer Start -->
+<section class="container-fluid footer  wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
+    <div class="container" style="max-width: 100%;">
+        <div class="row g-5 position-relative m-0 p-0">
+            <div class="col-lg-3 col-md-6 text-center m-0">
+                <a href="index.html">
+                    <img src="./img/tpchhhhhhhhh.png">
+                </a>
+                <h5 style="color:#f3f5f2"> THE
+                    PATTERNS COMPANY</h5>
+
+                <div class="d-flex hightech-link align-items-center justify-content-center py-3">
+                    <a href="https://www.facebook.com/webappdigitalmarketing"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThepatterns1"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-twitter text-primary"></i></a>
+                    <a href="https://www.instagram.com/thepatternscompany/"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6  m-0 py-5">
+                <a href="#" class="h3 " style="color:#7ED958">Quick Links</a>
+                <div class="mt-2 d-flex flex-row justify-content-around help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="./index.html" class="mb-2 text-white"></i>Home
+                        </a>
+                        <a href="./about.html" class="mb-2 text-white">About
+                        </a>
+                        <a href="./service.html" class="mb-2 text-white">Services
+                        </a>
+                        <a href="./blog.html" class="mb-2 text-white">Blog</a>
+                       
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                                             <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
+                        <a href="./careers.html" class="mb-2 text-white">Careers</a>
+                        <a href="./contact.html" class="mb-2 text-white">Contact
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6  m-0 py-5">
+                <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
+                <div class="mt-2 d-flex flex-row justify-content-center help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
+                        <a href="appdevelopment.html" class="mb-2 text-white">App Development
+                        </a>
+
+                        <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media
+                            Marketing</a>
+                        <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
+                            Optimization</a>
+                      
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                       
+                        <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
+                        <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
+                        <a href="googleads.html" class="mb-2 text-white">Google Ads
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
+
+            </div>
+        </div>
+
+        <hr class="text-light mt-4 mb-4">
+        <div class="row pb-3">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" style="color:#7ED958"><i class="fas fa-copyright me-2"></i>Copy
+                        Rights</a>, All
+                    right
+                    reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <span class="text-light">Designed By <a href="" style="color:#7ED958">THE
+                        PATTERNS COMPANY</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+        class="fa fa-arrow-up text-white"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const jobs = document.querySelectorAll(".job");
+    
+        jobs.forEach(job => {
+            job.addEventListener("click", () => {
+                // Close all other active jobs
+                jobs.forEach(otherJob => {
+                    if (otherJob !== job) {
+                        otherJob.nextElementSibling.classList.remove('active');
+                    }
+                });
+                
+                // Toggle the active class for the clicked job
+                job.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+    </script>
+</body>
+
+</html>

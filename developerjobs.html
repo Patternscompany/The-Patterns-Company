@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Digital marketing - The Patterns Company </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+ <!-- Navbar Start -->
+ <div class="container-fluid bg-primary sticky">
+    <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-lg py-0">
+            <a href="index.html" class="navbar-brand">
+                <!-- <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1> -->
+                <img src="./img/logo-white-lack.png" alt="" style="width: 200px;">
+            </a>
+            <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                   
+                    <div class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu rounded" style="background-color: #000000; ">
+                            <a href="webdevelopment.html" class="dropdown-item king"  >
+                                Web Development
+                            </a>
+                            <a href="appdevelopment.html" class="dropdown-item king">
+                                App Development
+                            </a>
+                            <a href="socialmediamarketing.html" class="dropdown-item king"
+                                >SMM (Social Media Marketing)
+                            </a>
+                            <a href="searchengineoptimization.html" class="dropdown-item king"
+                                >SEO (Search Engine Optimization)
+                            </a>
+
+                            <a href="ecommerce.html" class="dropdown-item king">
+                                E-Commerce
+                            </a>
+                            <a href="graphicdesigning.html" class="dropdown-item king" >
+                                Graphic Designing
+                            </a>
+                            <a href="googleads.html" class="dropdown-item king">Google
+                                Ads
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+            
+                    <a href="careers.html" class="nav-item nav-link">Careers</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shirink-0">
+                <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                    <a href="tel:+0123456789" class="position-relative animated tada infinite">
+                        <i class="fa fa-phone-alt text-white fa-2x"></i>
+                        <div class="position-absolute" style="top: -7px; left: 20px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center justify-content-center ms-4 ">
+                    <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+    <div class="whatsapp">
+        <a href="https://wa.me/+918500693113">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <style>
+        .job {
+            background-color: #7ED958;
+            color: #000000;
+            border: 2px solid #000000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding-left: 500px;
+
+            @media (max-width: 992px) {
+                padding-left: 20px;
+            }
+        }
+
+        .job-item-details {
+            border: 2px solid #000000;
+            border-top: none;
+            padding-left: 20px;
+            padding-top: 20px;
+            display: none;
+        }
+
+        .roles-responsibilities li {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            font-size: 17px;
+        }
+
+        ::selection {
+            background-color: #7ED958;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .roles-responsibilities li {
+            color: #000000;
+        }
+
+        .job-role {
+            color: #000000;
+            padding-top: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    </style>
+
+    <div class="container pt-3">
+        <h1 class="mb-4">DEVELOPER</h1>
+        <h5>Job Roles</h5>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12 d-flex flex-column jutify-content-center mb-4">
+                <div class="job-container">
+                    <div class="job">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Front-End Developer</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Work Together With The Design Team To Develop User-Friendly And Aesthetically Pleasing
+                                Website Interfaces.
+                            </li>
+                            <li>
+                                Write HTML, CSS, And JavaScript Code That Is Clear, Effective, And Manageable.
+                            </li>
+                            <li>
+                                Make Sure That Third-Party Apps And Back-End Services Integrate Seamlessly.
+                            </li>
+                            <li>
+                                Websites Should Be Optimized For Optimal Responsiveness And Speed.
+                            </li>
+                            <li>
+                                Look at the site­ in many browsers. Fix issues if site not work right.
+                                                        </li>
+                            <li>
+                                Le­arn new things. Follow trends in the marke­t. Will help with user expe­rience.                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Track Record Of Success In Front-End Development Or A Related Field.
+                            </li>
+                            <li>
+                                Competence With JavaScript, HTML, CSS, And Related Frameworks (Such As React, Angular,
+                                Or Vue.Js).
+                            </li>
+                            <li>
+                                Solid Knowledge Of The Fundamentals Of Responsive Design.
+                            </li>
+                            <li>
+                                You must have knowle­dge about how Git and other systems control te­xt versions.                            </li>
+                            <li>
+                                It is key to firmly grasp the rule­s and good ways of doing SEO.                            </li>
+                            <li>
+                                Good Communication And Problem-Solving Abilities.
+                            </li>
+                            <li>
+                                Capacity To Collaborate In A Deadline-Driven, High-Speed Work Environment.
+                            </li>
+                            <li>
+                                Portfolio Exhibiting Prior Projects And Demonstrable Impact On User Experience.
+                            </li>
+                            <li>
+                                A Bachelor’s Degree In Web Development, Computer Science, Or A Similar Discipline Is
+                                Advantageous.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Full-Stack Developer</p>
+                    </div>
+                    <div id="job-item2" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Create And Manage User-Friendly, Responsive Websites And Web Apps.
+                            </li>
+                            <li>
+                                Work with differe­nt groups to know what must be done. This will help you do a gre­at job. Work with your team to get tasks done in the­ best way. Working with other.
+                            </li>
+                            <li>
+                                To Improve Website Performance, Implement And Optimize Both Front-End And Back-End
+                                Capabilities.
+                            </li>
+                            <li>
+                                Use tools that study we­bsites and digital marketing togethe­r. This helps watch and improve website­ performance.
+                            </li>
+                            <li>
+                                Know what is new in the­ market. Be aware of ne­w tech. This helps give ne­w ideas to fix things.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Adept In Front-End Technologies, Including JavaScript, HTML5, CSS3, And Well-Known
+                                Frameworks Like Angular Or React.
+                            </li>
+                            <li>
+                                Strong Proficiency In Server-Side Programming Languages Such As Python, Ruby, Or
+                                Node.Js.
+                            </li>
+                            <li>
+                                Familiarity With Database Management Systems Like PostgreSQL, MongoDB, Or MySQL.
+                            </li>
+                            <li>
+                                Familiarity With Agile Development Techniques And Version Control Technologies, Such As
+                                Git.
+                            </li>
+                            <li>
+                                The Ability To Apply SEO Best Practices In Site Construction And Knowledge Of Them.
+                            </li>
+                            <li>
+                                Outstanding Ability To Solve Problems And Pay Attention To Details.
+                            </li>
+                            <li>
+                                Proficiency In Communication To Effectively Work With Teams In Design, Marketing, And
+                                Development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Web Designer</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Design And Develop User-Friendly, Aesthetically Pleasing Websites That Support
+                                Companies’ Brands And Marketing Goals.
+                            </li>
+                            <li>
+                                Work Together With Internal Teams And Clients To Comprehend Project Requirements And
+                                Convert Them Into Visually Appealing Website Designs.
+                            </li>
+                            <li>
+                                You have to le­arn new design patterns, tools, and te­chnologies. This will help make the­ best new online solutions. Studying the­se things is really important. You should learn about tre­nds, tools and tech often. This helps cre­ate new cutting-edge­ online solutions.
+                            </li>
+                            <li>
+                                Improve A Website’s Responsiveness, Performance, And Cross-Browser Compatibility.
+                            </li>
+                            <li>
+                                To Integrate Design Components And Guarantee Seamless Integration, Collaborate Closely
+                                With Developers.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Demonstrated Expertise As A Web Designer And A Robust Portfolio Featuring A Variety Of
+                                Imaginative And Creative Online Projects.
+                            </li>
+                            <li>
+                                Competent With Programs Like Sketch, Adobe Creative Suite, And Other Graphic Design
+                                Software.
+                            </li>
+                            <li>
+                                Solid Knowledge Of JavaScript, HTML, And CSS To Interact With Developers In An Efficient
+                                Manner.
+                            </li>
+                            <li>
+                                Understanding SEO Best Practices And Principles In Order To Support Website Optimization
+                                Initiatives.
+                            </li>
+                            <li>
+                                Possessing Outstanding Communication Abilities And The Capacity To Work With
+                                Cross-Functional Teams And Clients.
+                            </li>
+                            <li>
+                                Meticulous And With A Strong Sense Of Aesthetics And User Experience.
+                            </li>
+                            <li>
+                                Capacity To Oversee Several Projects And Fulfill Deadlines In A Hectic Setting.
+                            </li>
+                            <li>
+                                Preferably, You Have A Bachelor’s Degree In Graphic Design, Web Design, Or A Similar
+                                Profession.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">UI/UX Designer</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Work Together With Cross-Functional Teams To Comprehend User Requirements And Corporate
+                                Objectives For Projects Including Digital Marketing And Website Design.
+                            </li>
+                            <li>
+                                Utilize The Newest Design Tools, User Experience Approaches, And Industry-Leading Design
+                                Concepts To Create Aesthetically Pleasing And Intuitive User Interfaces.
+                            </li>
+                            <li>
+                                To Effectively Convey Design Concepts And Interactions, Create High-Fidelity Designs,
+                                Prototypes, And Wireframes.
+                            </li>
+                            <li>
+                                We look at how pe­ople use your website­s and apps. We study their behavior. The­n we tell you what's working well. And we­ suggest changes to improve the­ir experience­. This helps make your digital products bette­r.
+                            </li>
+                            <li>
+                                Assure Design Uniformity Across A Range Of Platforms And Gadgets To Preserve Corporate
+                                Identification And Raise Customer Happiness.
+                            </li>
+                            <li>
+                                To make ne­w and special ideas for projects, know the­ new styles, ways, and tools. Learn ne­w design trends, methods, and te­ch stuff. Keep up with the late­st creative things. This helps make­ better projects.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Bachelor’s Degree In Graphic Design, Human-Computer Interaction, Or A Similar
+                                Discipline, Along With A Solid Portfolio Of Completed UI/UX Design Work.
+                            </li>
+                            <li>
+                                Competence With Industry-Standard Design Programs Like Adobe Creative Suite, Sketch,
+                                Figma, Or Other Programs Of A Similar Nature.
+                            </li>
+                            <li>
+                                Strong Knowledge Of Information Architecture, Interface Design, And User-Centered Design
+                                Principles.</li>
+                            <li>
+                                Proficiency In Developing Responsive Designs And Enhancing User Interfaces For Various
+                                Screen Sizes And Devices.
+                            </li>
+                            <li>
+                                Excellent Communication Abilities To Work With Cross-Functional Teams And Effectively
+                                Communicate Design Concepts.
+                            </li>
+                            <li>
+                                Ability To Operate Effectively In A Deadline-Driven, Fast-Paced Atmosphere And Swiftly
+                                Iterate In Response To Feedback.
+                            </li>
+                            <li>
+                                It’s Advantageous To Have Knowledge About Digital Marketing Theories And Tactics.
+                            </li>
+                            <li>
+                                A Dedication To Providing Outstanding User Experiences And A Desire For Remaining
+                                Current With Design Trends.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Mobile App Developer(Android)</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                Create And Implement Top-Notch Android Mobile Applications In Accordance With Project
+                                Specifications And Business Guidelines.
+                            </li>
+                            <li>
+                                Work with many groups to see­ what people want. Learn about goals for the­ project. Find out how digital marketing helps make­ mobile apps.
+                            </li>
+                            <li>
+                                Assure Application Responsiveness, Quality, And Performance While Fixing Errors And
+                                Putting Effective Fixes In Place.
+                            </li>
+                            <li>
+                                It is very important to have­ the latest news on mobile­ app tools, ideas, and technologies. The­ company should use these ne­w things too. Many common words are used in this sente­nce. The lengths of the­ sentences are­ different. Some long words like­ technologies are also use­d.
+                            </li>
+                            <li>
+                                For The Best User Experience, Collaborate Closely With UX/UI Designers To Develop User
+                                Interfaces That Are Visually Appealing And Intuitive.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Bachelor’s Degree In Software Engineering, Computer Science, Or A Similar Discipline.
+                            </li>
+                            <li>
+                                Demonstrated Expertise Developing Android Apps, With A Solid Portfolio Of Apps That Have
+                                Been Released With Success.
+                            </li>
+                            <li>
+                                Competent In The Programming Languages Java And Kotlin, And Well-Versed In The Android
+                                SDK And Development Tools.
+                            </li>
+                            <li>
+                                Knowledge Of Digital Marketing Theories And Tactics And The Capacity To Apply Them To
+                                The Creation Of Apps That Will Increase User Interaction.
+                            </li>
+                            <li>
+                                Here­ are strong skills: how to fix problems, focus on details, and take­ actions to make apps run well on phones. Having the­se skills is very important. People­ who have them can optimize apps.
+                            </li>
+                            <li>
+                                Understanding Of Best Practices For Mobile Apps And Responsive Design Ideas.
+                            </li>
+                            <li>
+                                Strong Teamwork And Communication Abilities To Function Well In A Group Setting.
+                            </li>
+                            <li>
+                                Ability to adapt to changing industry trends and technologies.                            </li>
+                            <li>
+                                It Is Advantageous To Have Knowledge Of Version Control Systems Like Git.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job-container">
+                    <div class="job" style="border-top: none;">
+                        <img src="./img/imac.png" style="width: 20px; height: 17px; padding-right: 3px;" />
+                        <p class="job-role">Mobile App Developer(IOS)</p>
+                    </div>
+                    <div id="job-item1" class="job-item-details">
+                        <h4>Responsibilities:</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                For Our Clients, We Create And Manage Superior IOS Applications That Meet Their Demands
+                                For Digital Marketing And Website Design.
+                            </li>
+                            <li>
+                                Work With Cross-Functional Teams To Convert Design Concepts Into Aesthetically Pleasing
+                                And Intuitive IOS Applications.
+                            </li>
+                            <li>
+                                Keep Up Of The Most Recent Advancements In IOS Development Trends And Technology To
+                                Guarantee The Incorporation Of Cutting-Edge Functionality.
+                            </li>
+                            <li>
+                                Strengthen usability, responsiveness and user experience in mobile apps.                            </li>
+                            <li>
+                                Carry Out Comprehensive Testing And Debugging To Find And Fix Problems Quickly.
+                            </li>
+                            <li>
+                                To Smoothly Include Mobile Solutions Into Overall Strategy, Collaborate Closely With The
+                                Teams In Charge Of Website Design And Digital Marketing.
+                            </li>
+                        </ul>
+                        <h4>Qualifications</h4>
+                        <ul class="roles-responsibilities">
+                            <li>
+                                A Solid Portfolio Of Apps That Have Been Released With Success And Demonstrated
+                                Expertise In Developing IOS Applications.
+                            </li>
+                            <li>
+                                Proficiency With The Programming Languages Swift And Objective-C As Well As A Thorough
+                                Knowledge Of IOS Frameworks.
+                            </li>
+                            <li>
+                                You must know about outside librarie­s, online services, and APIs. You ne­ed this skill to add features to apps.                            </li>
+                            <li>
+                                You need to have strong problem solving skills and carefully code apps. Problem solving is key when designing.
+                            </li>
+                            <li>
+                                Capacity To Communicate Technical Ideas To Stakeholders Who Are Not Technical And Work
+                                Well In Cross-Functional Teams.
+                            </li>
+                            <li>
+                                Current Understanding Of Best Practices, New Trends, And IOS Design Requirements.
+                            </li>
+                            <li>
+                                A Bachelor’s Degree In Software Engineering, Computer Science, Or A Similar Discipline.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a class="apply-now-btn" href="applynow.html" target="_blank">
+                        <button style="border: none; background-color: transparent;">Apply now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Footer Start -->
+<section class="container-fluid footer  wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
+    <div class="container" style="max-width: 100%;">
+        <div class="row g-5 position-relative m-0 p-0">
+            <div class="col-lg-3 col-md-6 text-center m-0">
+                <a href="index.html">
+                    <img src="./img/tpchhhhhhhhh.png">
+                </a>
+                <h5 style="color:#f3f5f2"> THE
+                    PATTERNS COMPANY</h5>
+
+                <div class="d-flex hightech-link align-items-center justify-content-center py-3">
+                    <a href="https://www.facebook.com/webappdigitalmarketing"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThepatterns1"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-twitter text-primary"></i></a>
+                    <a href="https://www.instagram.com/thepatternscompany/"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
+                        class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6  m-0 py-5">
+                <a href="#" class="h3 " style="color:#7ED958">Quick Links</a>
+                <div class="mt-2 d-flex flex-row justify-content-around help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="./index.html" class="mb-2 text-white"></i>Home
+                        </a>
+                        <a href="./about.html" class="mb-2 text-white">About
+                        </a>
+                        <a href="./service.html" class="mb-2 text-white">Services
+                        </a>
+                        <a href="./blog.html" class="mb-2 text-white">Blog</a>
+                       
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                                             <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
+                        <a href="./careers.html" class="mb-2 text-white">Careers</a>
+                        <a href="./contact.html" class="mb-2 text-white">Contact
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6  m-0 py-5">
+                <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
+                <div class="mt-2 d-flex flex-row justify-content-center help-link">
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
+                        <a href="appdevelopment.html" class="mb-2 text-white">App Development
+                        </a>
+
+                        <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media
+                            Marketing</a>
+                        <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
+                            Optimization</a>
+                      
+                    </div>
+                    <div class="mt-4 d-flex flex-column short-link">
+                       
+                        <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
+                        <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
+                        <a href="googleads.html" class="mb-2 text-white">Google Ads
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
+
+            </div>
+        </div>
+
+        <hr class="text-light mt-4 mb-4">
+        <div class="row pb-3">
+            <div class="col-md-6 text-center text-md-start">
+                <span class="text-light"><a href="#" style="color:#7ED958"><i class="fas fa-copyright me-2"></i>Copy
+                        Rights</a>, All
+                    right
+                    reserved.</span>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <span class="text-light">Designed By <a href="" style="color:#7ED958">THE
+                        PATTERNS COMPANY</a></span>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        const jobs = document.querySelectorAll(".job");
+
+        jobs.forEach(job => {
+            job.addEventListener("click", () => {
+                // Close all other active jobs
+                jobs.forEach(otherJob => {
+                    if (otherJob !== job) {
+                        otherJob.nextElementSibling.classList.remove('active');
+                    }
+                });
+
+                // Toggle the active class for the clicked job
+                job.nextElementSibling.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
