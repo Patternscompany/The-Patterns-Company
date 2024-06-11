@@ -1059,12 +1059,12 @@ html,body{
     /* overflow-x: hidden; */
 }
 .container{
-
+    @media (max-width:992px){
     /* padding: 0;
     margin: 0; */
     width: 100%;
-    overflow: hidden;
-
+    overflow-x: hidden;
+    }
 }
 
 .navbar-nav .dropdown-menu.show{
