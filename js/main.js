@@ -191,6 +191,39 @@
     //         }, 500)
     //     })
     // }); 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('myCanvas');
+
+        function tryPlayVideo() {
+            // Attempt to play the video
+            video.muted = true
+            var playPromise = video.play();
+
+            // Check if play promise is returned
+            if (playPromise !== undefined) {
+                playPromise.then(function() {
+                    // Autoplay started!
+                    video.muted = false; // Ensure the sound is on
+                }).catch(function(error) {
+                    // Autoplay was prevented, possibly due to browser's autoplay policy
+                    console.log('Autoplay was prevented: ', error);
+                    video.muted = true; // Mute the video so it can play
+                    video.play(); // Attempt to play again muted
+                });
+            }
+        }
+
+        video.addEventListener('canplaythrough', function() {
+            tryPlayVideo();
+        });
+
+        // Ensure the video is loaded
+        video.addEventListener('loadeddata', function() {
+            
+        });
+    });
+
     
 })(jQuery);
 
