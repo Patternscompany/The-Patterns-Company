@@ -203,12 +203,8 @@
                 playPromise.then(function() {
                     // Autoplay started!
                     console.log('Autoplay started successfully');
-                    
-                    // Check if user has interacted and if so, unmute
-                    document.addEventListener('click', function() {
-                        video.muted = false;
-                        playPromise;
-                    });
+                    video.muted = false;
+                    playPromise;
                 }).catch(function(error) {
                     // Autoplay was prevented
                     console.log('Autoplay was prevented: ', error);
