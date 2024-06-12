@@ -192,33 +192,33 @@
     //     })
     // }); 
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var video = document.getElementById('myCanvas');
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var video = document.getElementById('myCanvas');
 
-        function tryPlayVideo() {
-            video.muted = true; // Start muted to comply with autoplay policy
-            var playPromise = video.play();
+    //     function tryPlayVideo() {
+    //         video.muted = true; // Start muted to comply with autoplay policy
+    //         var playPromise = video.play();
 
-            if (playPromise !== undefined) {
-                playPromise.then(function() {
-                    // Autoplay started!
-                    console.log('Autoplay started successfully');
-                    video.muted = false;
-                    playPromise;
-                }).catch(function(error) {
-                    // Autoplay was prevented
-                    console.log('Autoplay was prevented: ', error);
-                    // Video remains muted to ensure playback
-                    video.muted = true;
-                });
-            }
-        }
+    //         if (playPromise !== undefined) {
+    //             playPromise.then(function() {
+    //                 // Autoplay started!
+    //                 console.log('Autoplay started successfully');
+    //                 video.muted = false;
+    //                 playPromise;
+    //             }).catch(function(error) {
+    //                 // Autoplay was prevented
+    //                 console.log('Autoplay was prevented: ', error);
+    //                 // Video remains muted to ensure playback
+    //                 video.muted = true;
+    //             });
+    //         }
+    //     }
 
-        // Ensure video can be played through to avoid premature play attempts
-        video.addEventListener('canplaythrough', function() {
-            tryPlayVideo();
-        });
-    });
+    //     // Ensure video can be played through to avoid premature play attempts
+    //     video.addEventListener('canplaythrough', function() {
+    //         tryPlayVideo();
+    //     });
+    // });
 
     
 })(jQuery);
