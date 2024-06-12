@@ -196,31 +196,31 @@
         var video = document.getElementById('myCanvas');
 
         function tryPlayVideo() {
-            // Attempt to play the video
-            video.muted = true
+            video.muted = true; // Start muted to comply with autoplay policy
             var playPromise = video.play();
 
-            // Check if play promise is returned
             if (playPromise !== undefined) {
                 playPromise.then(function() {
                     // Autoplay started!
-                    video.muted = false; // Ensure the sound is on
+                    console.log('Autoplay started successfully');
+                    
+                    // Check if user has interacted and if so, unmute
+                    document.addEventListener('click', function() {
+                        video.muted = false;
+                        playPromise;
+                    });
                 }).catch(function(error) {
-                    // Autoplay was prevented, possibly due to browser's autoplay policy
+                    // Autoplay was prevented
                     console.log('Autoplay was prevented: ', error);
-                    video.muted = true; // Mute the video so it can play
-                    video.play(); // Attempt to play again muted
+                    // Video remains muted to ensure playback
+                    video.muted = true;
                 });
             }
         }
 
+        // Ensure video can be played through to avoid premature play attempts
         video.addEventListener('canplaythrough', function() {
             tryPlayVideo();
-        });
-
-        // Ensure the video is loaded
-        video.addEventListener('loadeddata', function() {
-            
         });
     });
 

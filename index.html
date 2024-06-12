@@ -128,7 +128,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-9" style="padding: 0 !important">
-                <div class="video position-relative">
+                <div class="video">
                     <video id="myCanvas" class="video-player" loop autoplay preload="auto">
                         <source src="./img/video/large_view.mp4" type="video/mp4" />
                     </video>
@@ -504,6 +504,13 @@
             font-weight: 500;
         }
 
+        @media (max-width:992px){
+            .home-second-heading{
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+
         .fullpage-desc {
             font-size: 20px;
             line-height: 23.5px;
@@ -548,7 +555,7 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center flex-wrap">
                 <div class="col-lg-3 col-md-6 d-flex justify-content-center align-items-center mb-2">
-                    <div class="team-image">
+                    <div class="team-image text-left" style="align-self: flex-start;">
                         <h4 class="team-name mt-3">
                             <div class="v11_14">
                                 <span class="v11_15" data-aos="fade-right">T</span>
@@ -1326,12 +1333,12 @@
         AOS.init();
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const canvas = document.getElementById("myCanvas");
-            if (canvas instanceof HTMLCanvasElement) {
-                canvas.play();
-            }
-        });
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     const canvas = document.getElementById("myCanvas");
+        //     if (canvas instanceof HTMLCanvasElement) {
+        //         canvas.play();
+        //     }
+        // });
         document
             .getElementById("myForm")
             .addEventListener("submit", function (event) {
@@ -1370,6 +1377,7 @@
                 // Redirect to WhatsApp URL
                 window.location.href = whatsappUrl;
             });
+            
     </script>
 </body>
 
