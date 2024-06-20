@@ -18,17 +18,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="img/logo-white-lack.png" rel="shortcut icon" />
+    <link href="img/favicon.png" rel="shortcut icon" />
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="preload" href="img/video/large_view.mp4" as="video">
 </head>
 
 <body>
@@ -130,6 +128,7 @@
             </div>
             <div class="col-12 col-lg-9" style="padding: 0 !important">
                 <div class="video">
+                    <video id="myCanvas" class="video-player" muted loop autoplay preload="auto">
                     <video preload="metadata" id="myCanvas" class="video-player" muted loop autoplay playsinline>
                         <source src="./img/video/large_view.mp4" type="video/mp4" />
                         <source src="./img/video/large_view.ogv" type="video/ogv">
