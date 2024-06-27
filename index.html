@@ -357,7 +357,7 @@
                 rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
                 rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
                 rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-                /* border: 3px solid white; */
+            /* border: 3px solid white; */
         }
 
         .about p {
@@ -419,9 +419,10 @@
         </div>
     </div>
     <style>
-        .mobile-desktop{
+        .mobile-desktop {
             padding-top: 5.5rem;
         }
+
         .animated-image {
             transition: transform 0.5s ease;
             transform: translateX(100%);
@@ -430,30 +431,34 @@
         .show {
             transform: translateX(0);
         }
-        .container-desktop {
-  position: relative;
- 
-background-image: url(/img/web-development-img.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-  height: 250px;
-  width: 400px;
-  border: 20px solid #43403d;
-  border-top-left-radius: 1.1rem; 
-  border-top-right-radius: 1.1rem; 
 
-  background-color: #f9fafb; /* Equivalent to bg-gray-50 */
-  /* box-shadow: 5px 5px 2.5px 6px rgb(209, 218, 218); */
-}
-.container-desktop .h-span{
-   
-    position: absolute;
-   top: -15px;
-   left: 50%;
-    display: flex;
-    justify-content: center;
-}
-/* .container-desktop .b-name{
+        .container-desktop {
+            position: relative;
+
+            background-image: url(/img/web-development-img.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 250px;
+            width: 400px;
+            border: 20px solid #43403d;
+            border-top-left-radius: 1.1rem;
+            border-top-right-radius: 1.1rem;
+
+            background-color: #f9fafb;
+            /* Equivalent to bg-gray-50 */
+            /* box-shadow: 5px 5px 2.5px 6px rgb(209, 218, 218); */
+        }
+
+        .container-desktop .h-span {
+
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* .container-desktop .b-name{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -465,58 +470,59 @@ background-repeat: no-repeat;
 
 
 
-/* Horizontal Span */
-.container-desktop .horizontal-span {
-  border: 1px solid black;
-  background-color: grey;
-  width: 10px;
-  height: 10px;
-  border-bottom-left-radius: 0.75rem; 
-  border-bottom-right-radius: 0.75rem; 
-  border-top-left-radius: 0.75rem; 
-  border-top-right-radius: 0.75rem; 
+        /* Horizontal Span */
+        .container-desktop .horizontal-span {
+            border: 1px solid black;
+            background-color: grey;
+            width: 10px;
+            height: 10px;
+            border-bottom-left-radius: 0.75rem;
+            border-bottom-right-radius: 0.75rem;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
 
 
-}
+        }
 
-/* Vertical Span */
-.container-desktop .vertical-span {
-  position: absolute;
-  left: 50%;
+        /* Vertical Span */
+        .container-desktop .vertical-span {
+            position: absolute;
+            left: 50%;
 
-  transform: translate(-50%,-50%);
-}
+            transform: translate(-50%, -50%);
+        }
 
-/* Top Span */
-.container-desktop .top-span {
-  /* top: 8rem;  */
-  height: 40px; /* Equivalent to h-7 */
-  width: 111%;
-/* left: -1.3rem; */
-  bottom: -80px !important;
-  background-color: #dedede;
-  border-bottom-left-radius: 0.375rem; 
-  border-bottom-right-radius: 0.375rem; 
-  border: 20px solid #dedede;
-  
-}
+        /* Top Span */
+        .container-desktop .top-span {
+            /* top: 8rem;  */
+            height: 40px;
+            /* Equivalent to h-7 */
+            width: 111%;
+            /* left: -1.3rem; */
+            bottom: -80px !important;
+            background-color: #dedede;
+            border-bottom-left-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+            border: 20px solid #dedede;
 
-/* Bottom Span */
-.container-desktop .bottom-span {
-    width: 100px;
-  height: 50px; 
-  background-color: #dedede !important;
- /* left: 8rem !important; */
-bottom: -120px !important;
-border-top-left-radius: 80px;
-border-top-right-radius: 80px;
-z-index: 0;
-border: 0;
+        }
 
-}
+        /* Bottom Span */
+        .container-desktop .bottom-span {
+            width: 100px;
+            height: 50px;
+            background-color: #dedede !important;
+            /* left: 8rem !important; */
+            bottom: -120px !important;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            z-index: 0;
+            border: 0;
+
+        }
     </style>
     <script>
-     
+
     </script>
     <div class="container-fluid bg-white py-5">
         <div class="container py-5">
@@ -530,22 +536,22 @@ border: 0;
                         <div class="b-name">
                             <div class="overlay" id="overlay"></div>
                             <div class="loader">
-                              <div class="loader-cube">
-                                <div class="face"></div>
-                                <div class="face"></div>
-                                <div class="face"></div>
-                                <div class="face"></div>
-                                <div class="face"></div>
-                                <div class="face"></div>
-                              </div>
+                                <div class="loader-cube">
+                                    <div class="face"></div>
+                                    <div class="face"></div>
+                                    <div class="face"></div>
+                                    <div class="face"></div>
+                                    <div class="face"></div>
+                                    <div class="face"></div>
+                                </div>
                             </div>
-                            
+
                         </div>
-                        
+
                         <span class="vertical-span top-span"></span>
                         <span class="vertical-span bottom-span"></span>
-                      </div>
-                      
+                    </div>
+
                 </div>
                 <div class="col-lg-6 pt-4">
                     <h2 class="home-second-heading text-primary">
@@ -579,157 +585,175 @@ border: 0;
     </div>
     <style>
         /* Container */
-.containe {
-  position: relative;
- 
+        .containe {
+            position: relative;
 
-  height: 400px;
-  width: 250px;
-  border: 4px solid black;
-  border-radius: 1.5rem; /* Equivalent to rounded-2xl */
-  background-color: #f9fafb; /* Equivalent to bg-gray-50 */
-  box-shadow: 5px 5px 2.5px 6px rgb(209, 218, 218);
-}
-.containe .h-span{
-    display: flex;
-    justify-content: center;
-}
-.containe .b-name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  perspective: 800px;
-}
 
-.loader-cube {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  transform-style: preserve-3d;
-  transform-origin: 50% 50%;
-  animation: rotate 4s infinite linear;
-}
+            height: 400px;
+            width: 250px;
+            border: 4px solid black;
+            border-radius: 1.5rem;
+            /* Equivalent to rounded-2xl */
+            background-color: #f9fafb;
+            /* Equivalent to bg-gray-50 */
+            box-shadow: 5px 5px 2.5px 6px rgb(209, 218, 218);
+        }
 
-.loader-cube:before,
-.loader-cube:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
+        .containe .h-span {
+            display: flex;
+            justify-content: center;
+        }
 
-.loader-cube:before {
-  transform: rotateX(90deg) translateZ(50px);
-}
+        .containe .b-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
 
-.loader-cube:after {
-  transform: rotateY(90deg) translateZ(50px);
-}
+        .loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            perspective: 800px;
+        }
 
-.loader-cube .face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgb(252, 248, 248); */
-  opacity: 0.8;
-  border: 2px solid rgb(252, 250, 250);
-}
+        .loader-cube {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform-origin: 50% 50%;
+            animation: rotate 4s infinite linear;
+        }
 
-.loader-cube .face:nth-child(1) {
-  transform: rotateY(0deg) translateZ(50px);
-  background-color: #e74c3c;
-}
+        .loader-cube:before,
+        .loader-cube:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+        }
 
-.loader-cube .face:nth-child(2) {
-  transform: rotateX(90deg) translateZ(50px);
-  background-color: #3498db;
-}
+        .loader-cube:before {
+            transform: rotateX(90deg) translateZ(50px);
+        }
 
-.loader-cube .face:nth-child(3) {
-  transform: rotateY(180deg) translateZ(50px);
-  background-color: #2ecc71;
-}
+        .loader-cube:after {
+            transform: rotateY(90deg) translateZ(50px);
+        }
 
-.loader-cube .face:nth-child(4) {
-  transform: rotateX(-90deg) translateZ(50px);
-  background-color: #f1c40f;
-}
+        .loader-cube .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            /* background-color: rgb(252, 248, 248); */
+            opacity: 0.8;
+            border: 2px solid rgb(252, 250, 250);
+        }
 
-.loader-cube .face:nth-child(5) {
-  transform: rotateY(90deg) translateZ(50px);
-  background-color: #9b59b6;
-}
+        .loader-cube .face:nth-child(1) {
+            transform: rotateY(0deg) translateZ(50px);
+            background-color: #e74c3c;
+        }
 
-.loader-cube .face:nth-child(6) {
-  transform: rotateY(0deg) translateZ(-50px);
-  background-color: #1abc9c;
-}
+        .loader-cube .face:nth-child(2) {
+            transform: rotateX(90deg) translateZ(50px);
+            background-color: #3498db;
+        }
 
-@keyframes rotate {
-  0% {
-    transform: rotateY(0deg) rotateX(0deg);
-  }
+        .loader-cube .face:nth-child(3) {
+            transform: rotateY(180deg) translateZ(50px);
+            background-color: #2ecc71;
+        }
 
-  100% {
-    transform: rotateY(1turn) rotateX(1turn);
-  }
-}
-.b-name .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent; /* Semi-transparent black overlay */
-  display: none;
-  z-index: 9999; /* Ensure it's on top of everything */
-}
+        .loader-cube .face:nth-child(4) {
+            transform: rotateX(-90deg) translateZ(50px);
+            background-color: #f1c40f;
+        }
 
-/* Horizontal Span */
-.containe .horizontal-span {
-  border: 1px solid black;
-  background-color: black;
-  width: 5rem; /* Equivalent to w-20 */
-  height: 0.5rem; /* Equivalent to h-2 */
-  border-bottom-left-radius: 0.75rem; /* Equivalent to rounded-bl-xl */
-  border-bottom-right-radius: 0.75rem; /* Equivalent to rounded-br-xl */
-}
+        .loader-cube .face:nth-child(5) {
+            transform: rotateY(90deg) translateZ(50px);
+            background-color: #9b59b6;
+        }
 
-/* Vertical Span */
-.containe .vertical-span {
-  position: absolute;
-  right: -0.5rem; /* Equivalent to -right-2 */
-  border: 4px solid black;
-  border-radius: 0.375rem; /* Equivalent to rounded-md */
-}
+        .loader-cube .face:nth-child(6) {
+            transform: rotateY(0deg) translateZ(-50px);
+            background-color: #1abc9c;
+        }
 
-/* Top Span */
-.containe .top-span {
-  top: 8rem; /* Equivalent to top-14 */
-  height: 1.75rem; /* Equivalent to h-7 */
-}
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg) rotateX(0deg);
+            }
 
-/* Bottom Span */
-.containe .bottom-span {
-  bottom: 11rem; /* Equivalent to bottom-36 */
-  height: 2.5rem; /* Equivalent to h-10 */
-}
+            100% {
+                transform: rotateY(1turn) rotateX(1turn);
+            }
+        }
 
+        .b-name .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            /* Semi-transparent black overlay */
+            display: none;
+            z-index: 9999;
+            /* Ensure it's on top of everything */
+        }
+
+        /* Horizontal Span */
+        .containe .horizontal-span {
+            border: 1px solid black;
+            background-color: black;
+            width: 5rem;
+            /* Equivalent to w-20 */
+            height: 0.5rem;
+            /* Equivalent to h-2 */
+            border-bottom-left-radius: 0.75rem;
+            /* Equivalent to rounded-bl-xl */
+            border-bottom-right-radius: 0.75rem;
+            /* Equivalent to rounded-br-xl */
+        }
+
+        /* Vertical Span */
+        .containe .vertical-span {
+            position: absolute;
+            right: -0.5rem;
+            /* Equivalent to -right-2 */
+            border: 4px solid black;
+            border-radius: 0.375rem;
+            /* Equivalent to rounded-md */
+        }
+
+        /* Top Span */
+        .containe .top-span {
+            top: 8rem;
+            /* Equivalent to top-14 */
+            height: 1.75rem;
+            /* Equivalent to h-7 */
+        }
+
+        /* Bottom Span */
+        .containe .bottom-span {
+            bottom: 11rem;
+            /* Equivalent to bottom-36 */
+            height: 2.5rem;
+            /* Equivalent to h-10 */
+        }
     </style>
     <div class="container-fluid bg-dark py-5">
         <div class="container py-5">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 d-flex justify-content-center order-lg-2" data-aos="fade-right"
                     data-wow-delay=".3s">
-                    <img src="./img/digital-removebg-preview.png" loading="lazy" alt="Animated image" class="asec-img" />
+                    <img src="./img/digital-removebg-preview.png" loading="lazy" alt="Animated image"
+                        class="asec-img" />
                 </div>
                 <div class="col-lg-6">
                     <h2 class="home-second-heading text-primary">
@@ -841,7 +865,8 @@ border: 0;
                 </div>
                 <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-left">
                     <div class="team-image">
-                        <img src="./img/patterns3.png" loading="lazy" alt="" class="manasa-mam-img" data-aos="fade-left" />
+                        <img src="./img/patterns3.png" loading="lazy" alt="" class="manasa-mam-img"
+                            data-aos="fade-left" />
                         <h4 class="photo mt-3">Manasa Reddy</h4>
                         <p class="last">Manager & HR</p>
                     </div>
@@ -987,7 +1012,188 @@ border: 0;
         </div>
     </section>
 
-    <style></style>
+    <section class="container-fluid scroll-section py-5" style="background-color: #7ed958" id="why">
+        <div class="container py-5">
+            <div class="row">
+                <h3 class="egg m-0 py-2">Why Choose Us</h3>
+                <p class="egg m-0 py-2 text-white">
+                    Empowering marketing and sales teams with clear visibility,
+                    flexibility, and profound technical proficiency – Your Digital
+                    Partner for Measurable Growth
+                </p>
+
+                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/choose1.jpg" class="rotate-img" />
+                    <h3 class="yahoo">Perfection Anytime</h3>
+                    <p class="yahoo">
+                        With perfection we create flawless websites and mobile apps for
+                        businesses of all sizes.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/choose2.jpg" class="heart-beat" />
+                    <h3 class="yahoo">24/7 Communication</h3>
+                    <p class="yahoo">We always authentic to delivery on time.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
+                    <img src="./img/choose3.jpg" class="rotate-img" />
+                    <h3 class="yahoo">Experienced Team</h3>
+                    <p class="yahoo">
+                        We have a skilled and dynamic team for development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <!-- Team Start -->
+
+    <style>
+        .rotate-img {
+            animation: rotateImg 1s linear infinite;
+        }
+
+        @keyframes rotateImg {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .heart-beat {
+            animation: heartBeat 1s infinite ease-in-out;
+        }
+
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <!-- Testimonial Start -->
+    <section class="container-fluid py-2 testi scroll-section" id="testimonials">
+        <div class="overlay">
+            <div class="container">
+                <div class="row g-4 d ">
+                    <div class="col-md-6 col-lg-6 wow fadeIn text-center">
+                        <img class="charminar1" src="img/cyber222.jpg" alt="" style="max-width: 100%;height:500px" />
+                    </div>
+                    <div class="col-md-6 col-lg-6 wow fadeIn">
+                        <div class="clients-carousel owl-carousel">
+                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
+                                <img src="./img/test_men_img_1.jpg" alt="" class="test_img" />
+                                <p>
+                                    The social media management services in Hyderabad provided
+                                    by this company have been a game-changer for my business.
+                                    Their team is knowledgeable, creative, and always on top of
+                                    the latest trends in social media.
+                                </p>
+                                <div>
+                                    <p class="rating">
+                                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                                    </p>
+                                </div>
+                                <h4 style="color: #7ed958">Pavan</h4>
+                            </div>
+                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
+                                <img src="./img/test_men_img_2.jpg" alt="" />
+                                <p>
+                                    I recently engaged this media and Portfolio Company to
+                                    develop a video for my business, the video was interesting,
+                                    informative and the team was professional, creative, and a
+                                    joy to deal with them. They Provide Best SEO Services in
+                                    Hyderabad
+                                </p>
+                                <div>
+                                    <p class="rating">
+                                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                                    </p>
+                                </div>
+                                <h4 style="color: #7ed958">Raja Rao</h4>
+                            </div>
+                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
+                                <img src="./img/admin.jpg" alt="" />
+                                <p>
+                                    This company's Digital Marketing Services in Hyderabad have
+                                    greatly aided our company's growth. We've experienced a huge
+                                    rise in website traffic and leads. I would strongly suggest
+                                    everyone.
+                                </p>
+                                <div>
+                                    <p class="rating">
+                                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                                    </p>
+                                </div>
+                                <h4 style="color: #7ed958">Anil</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial End -->
+    <style>
+        .d {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+
+    <!--Career Start-->
+    <section class="container-fluid blog py-5 scroll-section" style="background-color: #7ed958" id="career">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-white career-heading">
+                            Careers
+                        </h2>
+                        <p class="text-white text-center para-txt">
+                            Every Patternsion is the navigator of our clients’ <br> digital transformation
+                        </p>
+                        <div class="careers-img-container position-relative">
+                            <div class="careers-img-wrapper">
+                                <img src="img/careers-video-img.webp" alt="career" class="">
+                            </div>
+                            <div class="career-vido-caption">
+                                Life at Patterns
+                            </div>
+                        </div>
+                        <div style="margin-top: 100px; text-align: center;">
+                            <h3 class="text-capitalize text-white" style="font-weight: 400;">Find Opportunities for you</h3>
+                            <a href="careers.html">
+                                <button class="btn btn-success career-btn">
+                                    Explore Careers
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Career End-->
 
     <!-- Services End -->
     <section class="container-fluid blog py-5 scroll-section" style="background-color: #000000" id="blog">
@@ -1139,153 +1345,7 @@ border: 0;
         <!--FAQ Start-->
     </section>
     <style></style>
-    <section class="container-fluid scroll-section py-5" style="background-color: #7ed958" id="why">
-        <div class="container py-5">
-            <div class="row">
-                <h3 class="egg m-0 py-2">Why Choose Us</h3>
-                <p class="egg m-0 py-2 text-white">
-                    Empowering marketing and sales teams with clear visibility,
-                    flexibility, and profound technical proficiency – Your Digital
-                    Partner for Measurable Growth
-                </p>
 
-                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose1.jpg" class="rotate-img" />
-                    <h3 class="yahoo">Perfection Anytime</h3>
-                    <p class="yahoo">
-                        With perfection we create flawless websites and mobile apps for
-                        businesses of all sizes.
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose2.jpg" class="heart-beat" />
-                    <h3 class="yahoo">24/7 Communication</h3>
-                    <p class="yahoo">We always authentic to delivery on time.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 what d-flex flex-column justify-content-center align-items-center">
-                    <img src="./img/choose3.jpg" class="rotate-img" />
-                    <h3 class="yahoo">Experienced Team</h3>
-                    <p class="yahoo">
-                        We have a skilled and dynamic team for development.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  -->
-
-    <!-- Team Start -->
-
-    <style>
-        .rotate-img {
-            animation: rotateImg 1s linear infinite;
-        }
-
-        @keyframes rotateImg {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .heart-beat {
-            animation: heartBeat 1s infinite ease-in-out;
-        }
-
-        @keyframes heartBeat {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-    </style>
-    <!-- Testimonial Start -->
-    <section class="container-fluid py-2 testi scroll-section" id="testimonials">
-        <div class="overlay">
-            <div class="container">
-                <div class="row g-4 d ">
-                    <div class="col-md-6 col-lg-6 wow fadeIn text-center">
-                        <img class="charminar1" src="img/cyber222.jpg" alt="" style="max-width: 100%;height:500px" />
-                    </div>
-                    <div class="col-md-6 col-lg-6 wow fadeIn">
-                        <div class="clients-carousel owl-carousel">
-                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/test_men_img_1.jpg" alt="" class="test_img" />
-                                <p>
-                                    The social media management services in Hyderabad provided
-                                    by this company have been a game-changer for my business.
-                                    Their team is knowledgeable, creative, and always on top of
-                                    the latest trends in social media.
-                                </p>
-                                <div>
-                                    <p class="rating">
-                                        &#9733; &#9733; &#9733; &#9733; &#9733;
-                                    </p>
-                                </div>
-                                <h4 style="color: #7ed958">Pavan</h4>
-                            </div>
-                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/test_men_img_2.jpg" alt="" />
-                                <p>
-                                    I recently engaged this media and Portfolio Company to
-                                    develop a video for my business, the video was interesting,
-                                    informative and the team was professional, creative, and a
-                                    joy to deal with them. They Provide Best SEO Services in
-                                    Hyderabad
-                                </p>
-                                <div>
-                                    <p class="rating">
-                                        &#9733; &#9733; &#9733; &#9733; &#9733;
-                                    </p>
-                                </div>
-                                <h4 style="color: #7ed958">Raja Rao</h4>
-                            </div>
-                            <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/admin.jpg" alt="" />
-                                <p>
-                                    This company's Digital Marketing Services in Hyderabad have
-                                    greatly aided our company's growth. We've experienced a huge
-                                    rise in website traffic and leads. I would strongly suggest
-                                    everyone.
-                                </p>
-                                <div>
-                                    <p class="rating">
-                                        &#9733; &#9733; &#9733; &#9733; &#9733;
-                                    </p>
-                                </div>
-                                <h4 style="color: #7ed958">Anil</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial End -->
-    <style>
-        .d{
-            display: flex;
-    justify-content: center;
-    align-items: center;
-}
-        
-        .test-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-        }
-    </style>
 
     <!-- Contact Start -->
     <section class="container-fluid contact-form pb-3 scroll-section" id="query">
