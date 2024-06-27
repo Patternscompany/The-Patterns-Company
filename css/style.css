@@ -6,7 +6,7 @@
       format("woff2"),
     url(/content/dam/infosys-web/en/fonts/tungstenw05-medium.woff)
       format("woff");
-  font-weight: 500;
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -1811,6 +1811,8 @@ body{
     }
 }
 
+/* Home page Modified changes  */
+
 .careers-img-wrapper {
     overflow: hidden;
   }
@@ -1850,6 +1852,10 @@ body{
     margin-top: 10px;
     line-height: 40px;
 }
+
+.career-findopportunities{
+    font-size: 30px;
+}
 .career-btn{
     background-color: #1f1f1f;
     color: #fff;
@@ -1859,4 +1865,20 @@ body{
 .career-btn:hover{
     background-color: #fff;
     color: #1f1f1f;
+}
+
+@media (max-width:992px){
+    .career-heading{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .para-txt{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .career-findopportunities {
+        font-size: 20px;
+        color: #3f3f3f;
+        margin-bottom: 15px;
+    }
 }
