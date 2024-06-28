@@ -2035,10 +2035,20 @@ a.invester-sec {
   line-height: 73px;
   font-weight: 900;
 }
-
 .ml30 {
-  padding-left: 100px;
+    padding-left: 100px;
+  }
+@media (max-width:992px){
+    .cnt_us_txt {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+    .ml30 {
+        padding-left: 0;
+      }
 }
+
 
 .btn-no-effect {
   border-radius: 0;
