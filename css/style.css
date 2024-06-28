@@ -2003,9 +2003,12 @@ a.invester-sec {
   text-align: center;
   font-weight: 600;
   text-decoration: none;
+  transition: all 1s ease-in-out;
 }
 .cntry-name a {
     color: #fff;
+  transition: all 1s ease-in-out;
+
 }
 .cntry-name:hover {
   background-color: #fff;
