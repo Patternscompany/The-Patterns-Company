@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Careers - The Patterns Company</title>
@@ -27,7 +28,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
 </head>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -53,27 +57,27 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                       
+
                         <div class="nav-item dropdown active">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu rounded" style="background-color: #000000; ">
-                                <a href="webdevelopment.html" class="dropdown-item king"  >
+                                <a href="webdevelopment.html" class="dropdown-item king">
                                     Web Development
                                 </a>
                                 <a href="appdevelopment.html" class="dropdown-item king">
                                     App Development
                                 </a>
-                                <a href="socialmediamarketing.html" class="dropdown-item king"
-                                    >SMM (Social Media Marketing)
+                                <a href="socialmediamarketing.html" class="dropdown-item king">SMM (Social Media
+                                    Marketing)
                                 </a>
-                                <a href="searchengineoptimization.html" class="dropdown-item king"
-                                    >SEO (Search Engine Optimization)
+                                <a href="searchengineoptimization.html" class="dropdown-item king">SEO (Search Engine
+                                    Optimization)
                                 </a>
 
                                 <a href="ecommerce.html" class="dropdown-item king">
                                     E-Commerce
                                 </a>
-                                <a href="graphicdesigning.html" class="dropdown-item king" >
+                                <a href="graphicdesigning.html" class="dropdown-item king">
                                     Graphic Designing
                                 </a>
                                 <a href="googleads.html" class="dropdown-item king">Google
@@ -85,7 +89,7 @@
                         </div>
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                
+
                         <a href="careers.html" class="nav-item nav-link active">Careers</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -116,46 +120,52 @@
                 <h4 class="text-center mb-5" style="text-decoration: underline;">JOIN OUR TEAM!</h4>
             </div>
             <div class="col-12 d-flex justify-content-center mb-5">
-                <form class="d-flex flex-column justify-content-center">
-                    <input class="input-field" type="text" placeholder="Name*" required/>
+                <form class="d-flex flex-column justify-content-center" id="applicationForm">
+                    <input class="input-field" type="text" placeholder="Name*" name="name" required id="name" />
                     <div class="d-flex flex-row">
-                        <input class="input-field number-input " type="text" placeholder="Phone Number*" required/>
-                        <input class="input-field" type="email" placeholder="Email*" required/>
+                        <input class="input-field number-input" name="phone" type="text" id="mobileNumber"
+                            placeholder="Phone Number*" required />
+                        <input class="input-field" type="email" id="email" name="email" placeholder="Email*" required />
                     </div>
                     <label class="mb-2" for="roles">Role applying for<span class="red-color">*</span></label>
                     <div class="d-flex roles-container">
-                        <div class="input-container">
-                            <input name="role" type="radio" />
-                            <label>Marketing</label>
+                        <select name="role" id="designation" class="form-control">
+                            <option value="Marketing">Marketing</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Developer">Developer</option>
+                        </select>
+                        <!-- <div class="input-container d-flex">
+                            <input name="role" type="radio" name="role" class="me-2" id="Marketing"/>
+                            <label for="Marketing">Marketing</label>
+                        </div> -->
+                        <!-- <div class="input-container d-flex">
+                            <input name="role" type="radio" name="role" class="me-2" id="Developer"/>
+                            <label class="" for="Developer">Developer</label>
                         </div>
-                        <div class="input-container">
-                            <input name="role" type="radio" />
-                            <label class="">Developer</label>
-                        </div>
-                        <div class="input-container">
-                            <input name="role" type="radio" />
-                            <label>Digital Marketing</label>
-                        </div>
+                        <div class="input-container d-flex">
+                            <input name="role" type="radio" name="role" class="me-2" id="DM"/>
+                            <label for="DM">Digital Marketing</label>
+                        </div> -->
                     </div>
                     <div class="d-flex flex-column mt-4">
                         <label>Upload file <span class="red-color">*</span></label>
-                        <input type="file"/>
+                        <input type="file" name="file" accept=".pdf, .docx, .doc" required />
                     </div>
                     <div>
-                        <button class="submit-btn mt-3">
+                        <button class="submit-btn mt-3" type="submit">
                             Submit
                         </button>
                     </div>
-                    
+
                 </form>
             </div>
         </div>
-        
+
     </div>
     <!--Form End-->
 
     <style>
-        .input-field{
+        .input-field {
             width: 100%;
             height: 30px;
             border: none;
@@ -163,23 +173,27 @@
             padding: 0;
             margin-bottom: 30px;
         }
-        .roles-container{
-            @media (max-width:992px){
+
+        .roles-container {
+            @media (max-width:992px) {
                 display: flex;
                 flex-direction: column;
             }
         }
-        .number-input{
+
+        .number-input {
             margin-right: 30px;
         }
-        .red-color{
+
+        .red-color {
             color: red;
         }
-        .input-container{
+
+        .input-container {
             margin-right: 20px;
         }
-    
-        .submit-btn{
+
+        .submit-btn {
             border: none;
             border-radius: 4px;
             padding: 5px;
@@ -190,103 +204,103 @@
         }
     </style>
 
-<!-- Footer Start -->
-<section class="container-fluid footer  wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
-    <div class="container" style="max-width: 100%;">
-        <div class="row g-5 position-relative m-0 p-0">
-            <div class="col-lg-3 col-md-6 text-center m-0">
-                <a href="index.html">
-                    <img src="./img/tpchhhhhhhhh.png">
-                </a>
-                <h5 style="color:#f3f5f2"> THE
-                    PATTERNS COMPANY</h5>
+    <!-- Footer Start -->
+    <section class="container-fluid footer  wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
+        <div class="container" style="max-width: 100%;">
+            <div class="row g-5 position-relative m-0 p-0">
+                <div class="col-lg-3 col-md-6 text-center m-0">
+                    <a href="index.html">
+                        <img src="./img/tpchhhhhhhhh.png">
+                    </a>
+                    <h5 style="color:#f3f5f2"> THE
+                        PATTERNS COMPANY</h5>
 
-                <div class="d-flex hightech-link align-items-center justify-content-center py-3">
-                    <a href="https://www.facebook.com/webappdigitalmarketing"
-                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
-                            class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThepatterns1"
-                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
-                            class="fab fa-twitter text-primary"></i></a>
-                    <a href="https://www.instagram.com/thepatternscompany/"
-                        class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
-                            class="fab fa-instagram text-primary"></i></a>
-                    <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
-                        class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
-                            class="fab fa-linkedin-in text-primary"></i></a>
+                    <div class="d-flex hightech-link align-items-center justify-content-center py-3">
+                        <a href="https://www.facebook.com/webappdigitalmarketing"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FThepatterns1"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-twitter text-primary"></i></a>
+                        <a href="https://www.instagram.com/thepatternscompany/"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-instagram text-primary"></i></a>
+                        <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
+                                class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6  m-0 py-5">
+                    <a href="#" class="h3 " style="color:#7ED958">Quick Links</a>
+                    <div class="mt-2 d-flex flex-row justify-content-around help-link">
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="./index.html" class="mb-2 text-white"></i>Home
+                            </a>
+                            <a href="./about.html" class="mb-2 text-white">About
+                            </a>
+                            <a href="./service.html" class="mb-2 text-white">Services
+                            </a>
+                            <a href="./blog.html" class="mb-2 text-white">Blog</a>
+
+                        </div>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
+                            <a href="./careers.html" class="mb-2 text-white">Careers</a>
+                            <a href="./contact.html" class="mb-2 text-white">Contact
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6  m-0 py-5">
+                    <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
+                    <div class="mt-2 d-flex flex-row justify-content-center help-link">
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
+                            <a href="appdevelopment.html" class="mb-2 text-white">App Development
+                            </a>
+
+                            <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media
+                                Marketing</a>
+                            <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
+                                Optimization</a>
+
+                        </div>
+                        <div class="mt-4 d-flex flex-column short-link">
+
+                            <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
+                            <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
+                            <a href="googleads.html" class="mb-2 text-white">Google Ads
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
+
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6  m-0 py-5">
-                <a href="#" class="h3 " style="color:#7ED958">Quick Links</a>
-                <div class="mt-2 d-flex flex-row justify-content-around help-link">
-                    <div class="mt-4 d-flex flex-column short-link">
-                        <a href="./index.html" class="mb-2 text-white"></i>Home
-                        </a>
-                        <a href="./about.html" class="mb-2 text-white">About
-                        </a>
-                        <a href="./service.html" class="mb-2 text-white">Services
-                        </a>
-                        <a href="./blog.html" class="mb-2 text-white">Blog</a>
-                       
-                    </div>
-                    <div class="mt-4 d-flex flex-column short-link">
-                                             <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
-                        <a href="./careers.html" class="mb-2 text-white">Careers</a>
-                        <a href="./contact.html" class="mb-2 text-white">Contact
-                        </a>
-                    </div>
 
-
-
+            <hr class="text-light mt-4 mb-4">
+            <div class="row pb-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" style="color:#7ED958"><i class="fas fa-copyright me-2"></i>Copy
+                            Rights</a>, All
+                        right
+                        reserved.</span>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6  m-0 py-5">
-                <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
-                <div class="mt-2 d-flex flex-row justify-content-center help-link">
-                    <div class="mt-4 d-flex flex-column short-link">
-                        <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
-                        <a href="appdevelopment.html" class="mb-2 text-white">App Development
-                        </a>
-
-                        <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media
-                            Marketing</a>
-                        <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
-                            Optimization</a>
-                      
-                    </div>
-                    <div class="mt-4 d-flex flex-column short-link">
-                       
-                        <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
-                        <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
-                        <a href="googleads.html" class="mb-2 text-white">Google Ads
-                        </a>
-                    </div>
-
-
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="text-light">Designed By <a href="" style="color:#7ED958">THE
+                            PATTERNS COMPANY</a></span>
                 </div>
-            </div>
-            <div class="col-lg-3">
-                <img src="./img/char222.png" style="object-fit: scale-down;max-width: 100%; ">
-
             </div>
         </div>
-
-        <hr class="text-light mt-4 mb-4">
-        <div class="row pb-3">
-            <div class="col-md-6 text-center text-md-start">
-                <span class="text-light"><a href="#" style="color:#7ED958"><i class="fas fa-copyright me-2"></i>Copy
-                        Rights</a>, All
-                    right
-                    reserved.</span>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <span class="text-light">Designed By <a href="" style="color:#7ED958">THE
-                        PATTERNS COMPANY</a></span>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -304,5 +318,36 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        (function () {
+            emailjs.init("gtQYBzJEU83NKCQhL");
+        })();
+        document.getElementById('applicationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const file = form.querySelector('input[name="file"]').files[0];
+
+            // Validate file size (e.g., maximum 10MB)
+            if (file && file.size > 10485760) { // 10MB limit
+                alert('File size exceeds the 10MB limit. Please upload a smaller file.');
+                return;
+            }
+
+            // Sending the form using EmailJS
+            emailjs.sendForm('service_w50ho7f', 'template_mcljllm', form)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Application sent successfully!');
+                }, function (error) {
+                    console.error('FAILED...', error.status, error);
+                    alert('Failed to send application. Please try again.');
+                });
+        });
+
+    </script>
+
 </body>
+
 </html>
