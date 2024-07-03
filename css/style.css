@@ -1702,6 +1702,7 @@ a.invester-sec {
 
 .contact-page .form-div form .input:focus{
   background-color: #fff;
+  color: #000;
 }
 
 .contact-page .form-div form .form-btn {
@@ -1972,6 +1973,7 @@ a.invester-sec {
 
 .career-findopportunities {
   font-size: 30px;
+  font-weight: 100;
 }
 .career-btn {
   background-color: #1f1f1f;
