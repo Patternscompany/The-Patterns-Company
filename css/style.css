@@ -309,7 +309,7 @@
   visibility: visible;
   transition: 0.5s;
   opacity: 1;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 @media (max-width: 992px) {
   .navbar .nav-item:hover .dropdown-menu {
@@ -974,7 +974,7 @@ textarea {
 .v11_14 {
   width: 333px;
   height: 358px;
-  background: rgba(255, 255, 255, 1);
+  /* background: rgba(255, 255, 255, 1); */
   opacity: 1;
   position: relative;
   top: 0px;
@@ -1186,7 +1186,7 @@ textarea {
     68.4% 18.3%,
     70.4% 19.9%
   );
-  height: 500px;
+  /* height: 500px; */
 }
 @media (max-width: 992px) {
   .charminar1 {
@@ -1697,7 +1697,12 @@ a.invester-sec {
   border: none;
   border-radius: 10px;
   background: #343232;
-  box-shadow: inset 5px 5px 10px #282727, inset -5px -5px 10px #403e3e;
+  /* box-shadow: inset 5px 5px 10px #282727, inset -5px -5px 10px #403e3e; */
+}
+
+.contact-page .form-div form .input:focus{
+  background-color: #fff;
+  color: #000;
 }
 
 .contact-page .form-div form .form-btn {
@@ -1968,6 +1973,7 @@ a.invester-sec {
 
 .career-findopportunities {
   font-size: 30px;
+  font-weight: 100;
 }
 .career-btn {
   background-color: #1f1f1f;
@@ -2099,7 +2105,7 @@ a.invester-sec {
 
 @media (max-width:992px) {
   .home-second-heading {
-      font-size: 25px;
+      font-size: 30px;
       line-height: 35px;
   }
 }
