@@ -854,8 +854,6 @@
   background-color: var(--primary) !important;
   box-shadow: 0 0 30px #dddddd;
 }
-.clients-carousel .client-item {
-}
 /*** Testimonial End ***/
 
 /*** Contact Start ***/
@@ -955,17 +953,6 @@ textarea {
 .testi {
   position: relative;
   background-color: black;
-}
-
-.testi .overlay::before {
-  /* content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -4; */
 }
 
 .testi h4 {
@@ -1599,8 +1586,6 @@ body {
 .bg-index-artificial {
   position: relative;
 }
-.bg-index-artificial::before {
-}
 .bg-boosting:hover img,
 .bg-index-artificial:hover img,
 .bg-index-events:hover img,
@@ -1730,8 +1715,6 @@ a.invester-sec {
 .marg75-heading {
   font-size: 40px;
   letter-spacing: 2px;
-}
-.iconbox {
 }
 .iconbox i {
   color: var(--primary);
