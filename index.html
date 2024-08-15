@@ -1453,7 +1453,7 @@
             </div>
             <div class="row m0 row-eq-ht col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp">
                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 mb-xs-20 p0">
-                    <div class="col-eq-ht bg-yellow">
+                    <div class="col-eq-ht bg-green">
                         <div class="investors-news">
                             <h4 class="investors-news-title">In the news</h4>
                             <div class="investors-news-row relative">
@@ -1604,7 +1604,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="d-flex">
                         <div class="col-lg-6 cntry-name border w-50">
-                            <a href="https://maps.app.goo.gl/ZY1YUoLAjRVMxbn89" target="_blank">India</a>
+                            <a href="#" class="popupLink" data-popup="indiaMap">India</a>
                         </div>
                         <div class="col-lg-6 cntry-name border w-50">
                             <a href="#" class="popupLink" data-popup="popup1">Dubai</a>
@@ -1640,10 +1640,17 @@
                         </div>
                     </div>
 
+                    <div id="indiaMap" class="popup">
+                        <div class="popup-content map-content">
+                            <span class="close-btn">&times;</span>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60904.380095873734!2d78.33801833995098!3d17.43462825607039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2s20%2C%20Inorbit%20Mall%20Rd%2C%20Vittal%20Rao%20Nagar%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081!3m2!1d17.434550599999998!2d78.3792185!5e0!3m2!1sen!2sin!4v1723110102481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100" height="450px"></iframe>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-lg-6">
                     <h2 class="cnt_us_txt text-white pt-lg-5 ml30 home-second-heading">Let's help you navigate your
-                        <br>next
+                        <br class="d-none d-md-block">next
                     </h2>
                     <a href="contact.html" class="btn btn-no-effect reques-btn text-uppercase ml30">Contact Us</a>
                 </div>
@@ -1663,7 +1670,7 @@
             top: 0;
             width: 100%;
             /* Full width */
-            height: 100%;
+            /* height: 100%; */
             /* Full height */
             overflow: auto;
             /* Enable scroll if needed */
@@ -1682,6 +1689,10 @@
             border: 1px solid #888;
             width: 80%;
             /* Could be more or less, depending on screen size */
+        }
+
+        .map-content{
+            margin: 2% auto;
         }
 
         /* Close button */
@@ -1716,10 +1727,9 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-white">Address</h4>
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5 text-white">Flat
-                                No: 302, AR
-                                Residency, Lotus Colony, Madeena Guda
-                                Village, Miyapur, Opp Jeep Showroom, Hyderabad.</a>
+                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5 text-white">
+                                20, Inorbit Mall Rd, Vittal Rao Nagar, Knowledge City, Madhapur, Hyderabad, Telangana 500081
+                            </a>
                         </div>
                     </div>
                     <div class="d-flex mb-3 p-3 rounded">
@@ -1746,7 +1756,8 @@
                     <div class="contact-page">
                         <div class="col">
                             <div class="form-div">
-                                <form id="myForm" method="POST">
+                                <form action="https://formsubmit.co/chandrakanthkokkiripati1998@gmail.com" method="POST">
+                                    <input type="hidden" name="_captcha" value="false">
                                     <input type="text" id="name" class="input" name="name" required
                                         placeholder="Full Name" />
                                     <input type="email" class="input" id="email" name="email" required
@@ -1758,6 +1769,7 @@
                                     <textarea class="input" name="message" id="message" required placeholder="Message"
                                         rows="3"></textarea>
                                     <input type="submit" name="submit" class="form-btn" value="SEND" />
+                                    <input type="hidden" name="_next" value="https://thepatternscompany.com/thankyou">
                                 </form>
                             </div>
                         </div>
@@ -1772,12 +1784,13 @@
         <div class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <iframe class="rounded"
-                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d237.81024218684232!2d78.36089284173289!3d17.509237823483815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFlat%20No%3A%20302%2C%20AR%20Residency%2C%20Lotus%20Colony%2C%20Madeena%20Guda%20Village%2C%20Miyapur%2C%20Opp%20Jeep%20Showroom%2C%20Hyderabad.!5e0!3m2!1sen!2sin!4v1709020275548!5m2!1sen!2sin"
-                            style="border: 0;width: 100%;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" height="450px"></iframe>
+                    <div class="col-lg-6">
+                        <img src="img/thub (1).jpeg" alt="T Hub" class="w-100 rounded thub-img">
                     </div>
+                    <div class="col-12 col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60904.380095873734!2d78.33801833995098!3d17.43462825607039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2s20%2C%20Inorbit%20Mall%20Rd%2C%20Vittal%20Rao%20Nagar%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081!3m2!1d17.434550599999998!2d78.3792185!5e0!3m2!1sen!2sin!4v1723110102481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 rounded map" height="450px"></iframe>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -1800,9 +1813,9 @@
                     <li>
                         <a href="#team"> <span>Our Team</span></a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#why"> <span>Why Choose Us</span></a>
-                    </li>
+                    </li> -->
                     <li class="no-scrollify">
                         <a href="#testimonials"> <span>Testimonials</span></a>
                     </li>
@@ -2049,6 +2062,8 @@
             });
 
         });
+        let value = CookieDeprecationLabel.getValue();
+        console.log(value)
         document
             .getElementById("myForm")
             .addEventListener("submit", function (event) {
@@ -2087,7 +2102,9 @@
                 // Redirect to WhatsApp URL
                 window.location.href = whatsappUrl;
             });
-
+            function openPopup(){
+            window.open('https://maps.app.goo.gl/ZY1YUoLAjRVMxbn89', 'popup')
+            }
     </script>
 </body>
 
