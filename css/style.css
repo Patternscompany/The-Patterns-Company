@@ -3,6 +3,35 @@
 
 /*** Spinner Start ***/
 
+
+/* Step 1: Define the font using @font-face */
+@font-face {
+  font-family: 'Alien AI'; /* Name of the font */
+  src: url('/fonts/alien-ai-font/AlienAi-mLxP5.ttf')  format('truetype'), /* Path to the font file */
+       url('/fonts/alien-ai-font/AlienAiItalic-PKnO7.ttf') format('truetype');  /* Fallback format */
+  font-weight: normal; /* Font weight (normal, bold, etc.) */
+  font-style: normal;  /* Font style (normal, italic, etc.) */
+}
+@font-face {
+  font-family: 'Aloevera'; /* Name of the font */
+  src: url('/fonts/aloevera-font/Aloevera-OVoWO.ttf')  format('truetype'); /* Path to the font file */
+  font-weight: normal; /* Font weight (normal, bold, etc.) */
+  font-style: normal;  /* Font style (normal, italic, etc.) */
+}
+@font-face {
+  font-family: 'Bananas Italic Personal use'; /* Name of the font */
+  src: url('/fonts/bananas-italic-font/BananasItalicPersonalUseRegular-WyBxO.ttf')  format('truetype'); /* Path to the font file */
+  font-weight: normal; /* Font weight (normal, bold, etc.) */
+  font-style: normal;  /* Font style (normal, italic, etc.) */
+}
+@font-face {
+  font-family: 'Dustfine'; /* Name of the font */
+  src: url('/fonts/dustfine-font/Dustfine-1Gn42.ttf')  format('truetype'); /* Path to the font file */
+  font-weight: normal; /* Font weight (normal, bold, etc.) */
+  font-style: normal;  /* Font style (normal, italic, etc.) */
+}
+
+
 :root {
   --primary: #7ed958;
   --secondary: #181b18;
