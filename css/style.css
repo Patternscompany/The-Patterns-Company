@@ -1378,7 +1378,7 @@ body {
   width: 30px;
   height: 1px;
   opacity: 1;
-  background-color: #df9926;
+  background-color: #7ed958;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1405,7 +1405,7 @@ body {
 
 .sticky-left-nav ul li a span {
   display: block;
-  color: #df9926;
+  color: #000;
   opacity: 0;
   transition: opacity 0.3s ease-out;
   padding-top: 5px;
@@ -2097,8 +2097,31 @@ a.invester-sec {
       font-size: 30px;
       line-height: 35px;
   }
+  .reques-btn{
+    margin-left: 0;
+  }
 }
 
 .size-para{
   font-size: 17px;
+}
+.bg-green{
+  background-color: #7ed958;
+}
+
+.map, .thub-img{
+  height: 450px;
+}
+
+@media (max-width:992px){
+  .map, .thub-img{
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.input-service{
+  background-color: #fff !important;
+  border: 2px solid #000 !important;
 }
