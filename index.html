@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Best Digital Marketing Agency in Hyderabad, India</title>
     <meta
+        name="keywords"
         content="Best Digital Marketing Agency in Hyderabad, Best Digital Marketing Company In Hyderabad, Best Digital Marketing Services In Hyderabad, Digital Marketing Company In Hyderabad, Digital Marketing Companies In Hyderabad, Digital Marketing Services In Hyderabad, Digital Marketing Agency In Hyderabad, Digital Marketing Services, Digital Marketing Company, Digital Marketing Agency, Digital Marketing, Digital Marketing Near Me, Digital Marketing Services Near Me, Digital Marketing Company Near Me, Digital Marketing Agency Near Me"
-        name="keywords" />
+         />
     <meta
+        name="description" 
         content="Elevate your brand's online presence with Best Digital Marketing Agency in Hyderabad, India. We drive growth and engagement like never before."
-        name="description" />
+        />
 
 
     <link rel="canonical" href="https://thepatternscompany.com/">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RMEY31KNP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16661558035">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        gtag('config', 'G-7RMEY31KNP');
-    </script>
+  gtag('config', 'AW-16661558035');
+</script>
     <meta name="google-site-verification" content="rbYlfukdF4T0N7Qmd-S5QpR9PRBP5c7amId8B2p6x7w" />
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -155,7 +158,7 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <section class="container-fluid scroll-section" id="hero">
+<section class="container-fluid scroll-section" id="hero">
         <div class="row">
             <div class="col-lg-4 hero-content text-center my-3 order-1 order-lg-0 d-none d-lg-block">
                 <p class="fs-6 font-weight-bold">5+ YEARS OF EXPERIENCE</p>
@@ -178,16 +181,16 @@
             <div class="col-12 col-lg-8" style="padding: 0 !important">
                 <div class="video">
                     <!-- <video id="myCanvas" class="video-player" muted loop autoplay preload="auto"> -->
-                    <video preload="metadata" id="myCanvas" loading="lazy" class="video-player" muted loop autoplay
+                    <video preload="metadata" id="myCanvas" loading="lazy" class="video-player" autoplay muted loop 
                         playsinline>
-                        <source data-src="./img/video/large_view.mp4" type="video/mp4" />
-                        <source data-src="./img/video/large_view.ogv" type="video/ogv">
-                        <source data-src="./img/video/large_view.webm" type="video/webm">
+                        <source data-src="/img/video/large_view.mp4" type="video/mp4" />
+                        <!--<source data-src="/img/video/large_view.ogv" type="video/ogv">-->
+                        <!--<source data-src="/img/video/large_view.webm" type="video/webm">-->
                         "Your browser does not support the video tag."
                     </video>
                     <div class="hero-section position-absolute d-block d-lg-none">
                         <p class="exp font-weight-bold">5+ YEARS OF <br /> EXPERIENCE</p>
-                        <h3 class="future-heading" style="">
+                        <h3 class="future-heading">
                             WE <br />
                             CREATE<br />
                             FUTURE <br />
@@ -219,17 +222,7 @@
         </div>
     </section>
 
-
-
-    <script>
-        // const video = document.getElementById('myCanvas');
-      
-        // video.addEventListener('mouseenter', () => {
-        //   video.muted = false;
-        // });
-      </script>
     <style>
-       
         .hero-content {
             display: flex;
             flex-direction: column;
@@ -247,15 +240,11 @@
         }
 
         .hero-content h3 {
-            font-size: 4rem !important;
+            font-size: 3rem !important;
             font-weight: 600 !important;
             line-height: 80px;
-            letter-spacing: 10px;
-            /* font-family: "Alien AI"; */
-            /* font-family: "Aloevera"; */
-            /* font-family: "Bananas Italic Personal use"; */
-            font-family: "Dustfine";
-            text-transform:lowercase;
+            letter-spacing: 5px;
+            font-family: 'heebo', sans-serif;
         }
 
         @media (max-width:992px) {
@@ -314,8 +303,153 @@
             }
         }
     </style>
+ <div id="popupForm" class="popup-ads">
+        <div class="popup-content-ads">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <div>
+                <img src="img/about-1.jpg" alt="Popup Image" class="popup-image-ads">
 
+            </div>
+            <form class="form" action="tel:+918500693113">
+                <div>
+                    <p class="year"> <img src="/img/megaphone.gif" alt=""> 5th year Anniversary!</p>
+                    <h2>Website Design & Digital Marketing Offer</h2>
+                    <h3>20% Discount</h3>
+                    <p>
+                       HURRY UP!
+                    </p>
+                </div>
+                <a href="tel:+918500693113" class="btn-ads">Call Us</a>
+            </form>
+        </div>
+    </div>
     <!-- Carousel End -->
+   <script>
+const video = document.getElementById('myCanvas');
+const closeButton = document.getElementById('closePopup');
+
+// Unmute the video when the close button is clicked
+closeButton.addEventListener('click', () => {
+  video.muted = false;
+  video.unmute=true;
+
+  // Optionally, ensure the video plays if it is paused
+  if (video.paused) {
+    video.play().catch(error => {
+      console.error('Error playing video:', error);
+    });
+  }
+});
+</script>
+<style>
+       .popup-ads {
+    display: none; 
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index:999;
+}
+.popup-ads .year{
+    color: #259c4c;
+}
+.popup-ads .year img{
+    width: 50px;
+    height: 50px;
+}
+.popup-content-ads {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-direction: column; */
+}
+@media(max-width:992px){
+    .popup-content-ads{
+        flex-wrap: wrap;
+    }
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-image-ads {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.popup-image-ads{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    padding-inline: 1rem;
+}
+.form h2{
+font-size: 1.5rem !important;
+}
+.form h3{
+    background-color:red;
+    color: white;
+}
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form .btn-ads {
+    width: 100%;
+    background-color: #259c4c;
+    outline: 0;
+    border: 0;
+    padding: 12px 22px;
+    color: white;
+    font-weight: 900;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+}
+
+@media (max-width: 480px) {
+    .popup-content-ads {
+        width: 90%;
+        padding: 15px;
+    }
+}
+      
+    </style>
+
+<script>
+ // Show the popup when the page loads
+window.addEventListener("load", function() {
+    document.getElementById("popupForm").style.display = "flex";
+});
+
+// Close the popup when the close button is clicked
+document.getElementById("closePopup").addEventListener("click", function() {
+    document.getElementById("popupForm").style.display = "none";
+});
+
+
+</script>
 
     <div class="whatsapp">
         <a href="https://wa.me/+918500693113">
@@ -502,8 +636,7 @@
             width: fit-content;
             margin: auto;
         }
-
-        /* 
+/* 
         .n {
             padding: 12px 10px;
             background: rgb(223, 225, 235);
@@ -533,7 +666,7 @@
                 </div>
                 <div class="col-lg-6 pt-4">
                     <h2 class="home-second-heading text-dark">
-                        App Development in Hyderabad
+                        App Development Services in Hyderabad
                     </h2>
                     <p class="fullpage-desc text-white">
                         <em> Innovating digital experiences through apps </em>
@@ -547,7 +680,7 @@
                         <div class="mt-3">
                             <p class="text-white">
                                 Transforming ideas into seamless digital solutions through
-                                expert app development at Patterns Company.
+                                expert app development Services in Hyderabad at Patterns Company.
                             </p>
                         </div>
                         <div class="mt-3">
@@ -766,7 +899,7 @@
                 </div>
                 <div class="col-lg-6 mobile-desktop">
                     <h2 class="home-second-heading text-green">
-                        Web Development in Hyderabad
+                        Web Development Services in Hyderabad
                     </h2>
                     <p class="fullpage-desc text-green">
                         <em>
@@ -782,8 +915,8 @@
                     <div class="d-flex flex-column flex-lg-row">
                         <div class="mt-3 p-1">
                             <p class="text-red">
-                                Patterns Company specializes in delivering bespoke web
-                                development solutions tailored to your unique needs and
+                                Patterns Company specializes in delivering bespoke Web
+                                Development Services In Hyderabad tailored to your unique needs and
                                 aspirations.
                             </p>
                         </div>
@@ -800,27 +933,23 @@
         </div>
     </div>
     <style>
-        .text-green {
+        .text-green{
             color: #259c4c;
         }
-
-        .text-red {
+        .text-red{
             color: #e9493d;
         }
-
-        .text-skyblue {
+        .text-skyblue{
             color: #6000ff;
         }
-
         /* .mobile-desktop {
             padding-top: 5.5rem;
         } */
 
-        .text-yellow {
+        .text-yellow{
             color: #ff8201;
         }
-
-        .text-orange {
+        .text-orange{
             color: #ff5521;
         }
 
@@ -932,6 +1061,8 @@
             font-weight: 700;
             font-size: 14px;
         }
+
+
     </style>
     <script>
 
@@ -946,7 +1077,7 @@
                 </div>
                 <div class="col-lg-6">
                     <h2 class="home-second-heading text-dark">
-                        Digital Marketing in Hyderabad
+                        Digital Marketing Services in Hyderabad
                     </h2>
                     <p class="fullpage-desc text-dark">
                         <em> Drive growth through strategic marketing. </em>
@@ -960,7 +1091,7 @@
                         <div class="mt-3">
                             <p class="text-dark">
                                 Transforming businesses through strategic digital marketing
-                                solutions tailored for optimal audience engagement and growth
+                                solutions tailored for optimal audience engagement and growth We are one of the leading Digital Marketing Agency In Hyderabad.
                             </p>
                         </div>
                         <div class="mt-3">
@@ -980,11 +1111,9 @@
             line-height: 23.5px;
             font-weight: 400;
         }
-
-        .about .fullpage-desc::first-letter {
+        .about .fullpage-desc::first-letter{
             font-size: 30px;
         }
-
         .btn-shutter-more {
             color: #fff;
             border: 1px solid #fff;
@@ -1005,11 +1134,9 @@
         .desc-img {
             width: 100%;
         }
-
-        .bg-pale-yellow {
+        .bg-pale-yellow{
             background-color: #e7c132;
         }
-
         .asec-img {
             width: 100%;
             /* height: 500px; */
@@ -1019,12 +1146,10 @@
             border: 1px solid #000000;
             color: #000000;
         }
-
-        .bg-green {
+        .bg-green{
             background-color: #7ed958;
         }
-
-        .bg-dark-outline-btn {
+        .bg-dark-outline-btn{
             background-color: transparent;
             color: #000;
             border: 1px solid #000;
@@ -1062,20 +1187,20 @@
                         <p class="last">Founder & CEO</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-left">
-                    <div class="team-image">
-                        <img src="./img/patterns3.png" loading="lazy" alt="" class="manasa-mam-img"
-                            data-aos="fade-left" />
-                        <h4 class="photo mt-3">Manasa Reddy</h4>
-                        <p class="last">Manager & HR</p>
-                    </div>
-                </div>
+                <!--<div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-left">-->
+                <!--    <div class="team-image">-->
+                <!--        <img src="./img/patterns3.png" loading="lazy" alt="" class="manasa-mam-img"-->
+                <!--            data-aos="fade-left" />-->
+                <!--        <h4 class="photo mt-3">Manasa Reddy</h4>-->
+                <!--        <p class="last">Manager & HR</p>-->
+                <!--    </div>-->
+                <!--</div>-->
 
                 <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-right">
                     <div class="team-image">
-                        <img src="./img/shania mam.jpg" alt="" class="dk-img alignment pt-lg-2" />
-                        <h4 class="photo mt-3">Shania</h4>
-                        <p class="last">Business Development Manager</p>
+                        <img src="./img/Shruthi.png" alt="" class="dk-img alignment pt-lg-2" />
+                        <h4 class="photo mt-3">Shruthi</h4>
+                        <p class="last">Human Resource</p>
                     </div>
                 </div>
                 <!-- <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="zoom-out">
@@ -1144,7 +1269,7 @@
                 </div>
                 <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-right">
                     <div class="team-image" style="padding-top: 1px">
-                        <img src="./img/patterns4.png" alt="" class="dk-img" />
+                        <img src="./img/pandu-reddy.png" alt="" class="dk-img" />
                         <h4 class="photo mt-3">Pandu Reddy</h4>
                         <p class="last">Aaj mei Khuch Naya Karunga</p>
                     </div>
@@ -1262,6 +1387,27 @@
                         <p class="last">slicing through code challenges with precision</p>
                     </div>
                 </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-right">
+                    <div class="team-image">
+                        <img src="./img/Kumar.png" alt="" class="dk-img" />
+                        <h4 class="photo mt-3">Kumar</h4>
+                        <p class="last">Silencing the bugs, one fix at a time.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-right">
+                    <div class="team-image">
+                        <img src="./img/Sushmita.png" alt="" class="dk-img" />
+                        <h4 class="photo mt-3">Sushmita</h4>
+                        <p class="last">Crafting flawless designs, pixel by pixel.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-center align-items-center mb-2" data-aos="fade-right">
+                    <div class="team-image">
+                        <img src="./img/Shweta.png" alt="" class="dk-img " />
+                        <h4 class="photo mt-3">Shweta</h4>
+                        <p class="last">Designing experiences that evolve with every moment..</p>
+                    </div>
+                </div>
             </div>
             <!-- <marquee behavior="scroll" direction="left" scrollamount="10" class="text-dark"><img src="./img/sasi.jpg" alt="" class="dedeepya-img" /></marquee> -->
         </div>
@@ -1350,10 +1496,9 @@
                 transform: scale(1);
             }
         }
-
-        .why-we-img {
-            width: 68%;
-        }
+    .why-we-img{
+        width: 68%;
+    }
     </style>
     <!-- Testimonial Start -->
     <section class="container-fluid py-2 testi scroll-section" id="testimonials">
@@ -1368,7 +1513,7 @@
                             <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
                                 <img src="./img/test_men_img_1.jpg" alt="" class="test_img" />
                                 <p>
-                                    The social media management services in Hyderabad provided
+                                    The Social Media Marketing Services in Hyderabad provided
                                     by this company have been a game-changer for my business.
                                     Their team is knowledgeable, creative, and always on top of
                                     the latest trends in social media.
@@ -1381,7 +1526,7 @@
                                 <h4 style="color: #7ed958">Pavan</h4>
                             </div>
                             <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/test_men_img_2.jpg" alt="" />
+                                <img src="./img/test_men_img_2.jpg" alt="testimonia" />
                                 <p>
                                     I recently engaged this media and Portfolio Company to
                                     develop a video for my business, the video was interesting,
@@ -1397,7 +1542,7 @@
                                 <h4 style="color: #7ed958">Raja Rao</h4>
                             </div>
                             <div class="col-md-12 col-lg-12 wow fadeIn text-center" data-wow-delay="0.1s">
-                                <img src="./img/admin.jpg" alt="" />
+                                <img src="./img/test_women_img_1.jpg" alt="testimonial" />
                                 <p>
                                     This company's Digital Marketing Services in Hyderabad have
                                     greatly aided our company's growth. We've experienced a huge
@@ -1409,7 +1554,7 @@
                                         &#9733; &#9733; &#9733; &#9733; &#9733;
                                     </p>
                                 </div>
-                                <h4 style="color: #7ed958">Anil</h4>
+                                <h4 style="color: #7ed958">Anitha</h4>
                             </div>
                         </div>
                     </div>
@@ -1643,6 +1788,12 @@
                         </div>
                     </div>
 
+                    <div id="indiaMap" class="popup">
+                        <div class="popup-content map-content">
+                            <span class="close-btn">&times;</span>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60904.380095873734!2d78.33801833995098!3d17.43462825607039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2s20%2C%20Inorbit%20Mall%20Rd%2C%20Vittal%20Rao%20Nagar%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081!3m2!1d17.434550599999998!2d78.3792185!5e0!3m2!1sen!2sin!4v1723110102481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+                        </div>
+                    </div>
                     <div id="popup1" class="popup">
                         <div class="popup-content">
                             <span class="close-btn">&times;</span>
@@ -1664,20 +1815,10 @@
                         </div>
                     </div>
 
-                    <div id="indiaMap" class="popup">
-                        <div class="popup-content map-content">
-                            <span class="close-btn">&times;</span>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60904.380095873734!2d78.33801833995098!3d17.43462825607039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2s20%2C%20Inorbit%20Mall%20Rd%2C%20Vittal%20Rao%20Nagar%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081!3m2!1d17.434550599999998!2d78.3792185!5e0!3m2!1sen!2sin!4v1723110102481!5m2!1sen!2sin"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade" class="w-100" height="450px"></iframe>
-                        </div>
-                    </div>
-
                 </div>
                 <div class="col-lg-6">
                     <h2 class="cnt_us_txt text-white pt-lg-5 ml30 home-second-heading">Let's help you navigate your
-                        <br class="d-none d-md-block">next
+                        <br>next
                     </h2>
                     <a href="contact.html" class="btn btn-no-effect reques-btn text-uppercase ml30">Contact Us</a>
                 </div>
@@ -1697,7 +1838,7 @@
             top: 0;
             width: 100%;
             /* Full width */
-            /* height: 100%; */
+            height: 100%;
             /* Full height */
             overflow: auto;
             /* Enable scroll if needed */
@@ -1717,8 +1858,7 @@
             width: 80%;
             /* Could be more or less, depending on screen size */
         }
-
-        .map-content {
+         .map-content{
             margin: 2% auto;
         }
 
@@ -1754,9 +1894,8 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-white">Address</h4>
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5 text-white">
-                                20, Inorbit Mall Rd, Vittal Rao Nagar, Knowledge City, Madhapur, Hyderabad, Telangana
-                                500081
+                            <a href="https://maps.app.goo.gl/vHW3nZ56xY3Jcqip7" target="_blank" class="h5 text-white">
+                                T- HuB 2.o, Inorbit Mall Rd, Vittal Rao Nagar, Knowledge City, Madhapur, Hyderabad, Telangana 500081
                             </a>
                         </div>
                     </div>
@@ -1775,7 +1914,7 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-white">Email Us</h4>
-                            <a class="h5 text-white" style="word-break: break-all" href="mailto:info@example.com"
+                            <a class="h5 text-white" style="word-break: break-all" href="mailto:info@thepatternscompany.com"
                                 target="_blank">info@thepatternscompany.com</a>
                         </div>
                     </div>
@@ -1784,9 +1923,7 @@
                     <div class="contact-page">
                         <div class="col">
                             <div class="form-div">
-                                <form action="https://formsubmit.co/chandrakanthkokkiripati1998@gmail.com"
-                                    method="POST">
-                                    <input type="hidden" name="_captcha" value="false">
+                                <form id="contactForm" method="POST">
                                     <input type="text" id="name" class="input" name="name" required
                                         placeholder="Full Name" />
                                     <input type="email" class="input" id="email" name="email" required
@@ -1798,7 +1935,6 @@
                                     <textarea class="input" name="message" id="message" required placeholder="Message"
                                         rows="3"></textarea>
                                     <input type="submit" name="submit" class="form-btn" value="SEND" />
-                                    <input type="hidden" name="_next" value="https://thepatternscompany.com/thankyou">
                                 </form>
                             </div>
                         </div>
@@ -1817,13 +1953,9 @@
                         <img src="img/thub (1).jpeg" alt="T Hub" class="w-100 rounded thub-img">
                     </div>
                     <div class="col-12 col-lg-6">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60904.380095873734!2d78.33801833995098!3d17.43462825607039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2s20%2C%20Inorbit%20Mall%20Rd%2C%20Vittal%20Rao%20Nagar%2C%20Madhapur%2C%20Hyderabad%2C%20Telangana%20500081!3m2!1d17.434550599999998!2d78.3792185!5e0!3m2!1sen!2sin!4v1723110102481!5m2!1sen!2sin"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="w-100 rounded map"
-                            height="450px"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3806.5219962361166!2d78.3758003!3d17.4347126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e37831f177%3A0x32d4499d34baaa78!2sT-Hub%20Phase%202!5e0!3m2!1sen!2sin!4v1723358570570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 rounded map" height="450"></iframe>
                     </div>
-
+                    
                 </div>
             </div>
         </div>
@@ -1846,9 +1978,9 @@
                     <li>
                         <a href="#team"> <span>Our Team</span></a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="#why"> <span>Why Choose Us</span></a>
-                    </li> -->
+                    </li>
                     <li class="no-scrollify">
                         <a href="#testimonials"> <span>Testimonials</span></a>
                     </li>
@@ -1883,15 +2015,15 @@
                     <a href="#" class="h3 text-primary">Quick Links</a>
                     <div class="mt-2 d-flex flex-row justify-content-around help-link">
                         <div class="mt-4 d-flex flex-column short-link">
-                            <a href="./index.html" class="mb-2 text-white">Home </a>
-                            <a href="./about.html" class="mb-2 text-white">About </a>
-                            <a href="./service.html" class="mb-2 text-white">Services </a>
-                            <a href="./blog.html" class="mb-2 text-white">Blog</a>
+                            <a href="index.html" class="mb-2 text-white">Home </a>
+                            <a href="about" class="mb-2 text-white">About </a>
+                            <a href="service" class="mb-2 text-white">Services </a>
+                            <a href="blog" class="mb-2 text-white">Blog</a>
                         </div>
                         <div class="mt-4 d-flex flex-column short-link">
-                            <a href="./gallery.html" class="mb-2 text-white">Gallery</a>
-                            <a href="./careers.html" class="mb-2 text-white">Careers</a>
-                            <a href="./contact.html" class="mb-2 text-white">Contact </a>
+                            <a href="gallery" class="mb-2 text-white">Gallery</a>
+                            <a href="careers" class="mb-2 text-white">Careers</a>
+                            <a href="contact" class="mb-2 text-white">Contact </a>
                         </div>
                     </div>
                 </div>
@@ -1951,143 +2083,12 @@
                     <span class="text-light text-primary"><a href="#" class="text-primary"><i
                                 class="fas fa-copyright me-2"></i>Copy Rights</a>, All right reserved.</span> <span
                         class="text-light">Designed By
-                        <a href="" class="text-primary">THE PATTERNS COMPANY</a></span>
+                        <a href="index.html" class="text-primary">THE PATTERNS COMPANY</a></span>
                 </div>
             </div>
         </div>
     </section>
     <!-- Footer End -->
-
-    <div id="popupForm" class="popup-ads">
-        <div class="popup-content-ads">
-            <span class="close-btn" id="closePopup">&times;</span>
-            <div>
-                <img src="img/about-1.jpg" alt="Popup Image" class="popup-image-ads">
-
-            </div>
-            <form class="form" action="tel:+918008457750">
-                <div>
-                    <p class="year"> <img src="/img/megaphone.gif" alt=""> 5th year Anniversary!</p>
-                    <h2>Website Design & Digital Marketing Offer</h2>
-                    <h3>20% Discount</h3>
-                    <p>
-                       HURRY UP!
-                    </p>
-                </div>
-                <a href="tel:+918500693113" class="btn-ads">Call Us</a>
-            </form>
-        </div>
-    </div>
-
-    <style>
-       .popup-ads {
-    display: none; 
-    position: fixed;
-    top: 10%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-}
-.popup-ads .year{
-    color: #259c4c;
-}
-.popup-ads .year img{
-    width: 50px;
-    height: 50px;
-}
-.popup-content-ads {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    width: 90%;
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /* flex-direction: column; */
-}
-@media(max-width:992px){
-    .popup-content-ads{
-        flex-wrap: wrap;
-    }
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.popup-image-ads {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 15px;
-    object-fit: cover;
-}
-.popup-image-ads{
-    width: 100%;
-    height: 100%;
-}
-.form{
-    padding-inline: 1rem;
-}
-.form h2{
-font-size: 1.5rem !important;
-}
-.form h3{
-    background-color:red;
-    color: white;
-}
-.form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form .btn-ads {
-    width: 100%;
-    background-color: #259c4c;
-    outline: 0;
-    border: 0;
-    padding: 12px 22px;
-    color: white;
-    font-weight: 900;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 100px;
-}
-
-@media (max-width: 480px) {
-    .popup-content-ads {
-        width: 90%;
-        padding: 15px;
-    }
-}
-      
-    </style>
-
-<script>
- // Show the popup when the page loads
-window.addEventListener("load", function() {
-    document.getElementById("popupForm").style.display = "flex";
-});
-
-// Close the popup when the close button is clicked
-document.getElementById("closePopup").addEventListener("click", function() {
-    document.getElementById("popupForm").style.display = "none";
-});
-
-
-</script>
-
 
     <style>
         .charminar {
@@ -2195,7 +2196,7 @@ document.getElementById("closePopup").addEventListener("click", function() {
         AOS.init();
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
             const video = document.getElementById('myCanvas');
             const source = video.querySelector('source');
             source.src = source.dataset.src;
@@ -2226,50 +2227,34 @@ document.getElementById("closePopup").addEventListener("click", function() {
             });
 
         });
-        let value = CookieDeprecationLabel.getValue();
-        console.log(value)
-        document
-            .getElementById("myForm")
-            .addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent form submission
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
 
-                // Get form data
-                var name = document.getElementById("name").value;
-                var email = document.getElementById("email").value;
-                var mobileNumber = document.getElementById("number").value;
-                var service = document.getElementById("service").value;
-                var message = document.getElementById("message").value;
+            // Get form data
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mobileNumber = document.getElementById("number").value;
+            var service = document.getElementById("service").value;
+            var message = document.getElementById("message").value;
 
-                // Construct WhatsApp URL with pre-filled message
-                var phone = "+918500693113"; // Replace with the recipient's phone number
-                var whatsappUrl =
-                    "https://wa.me/" +
-                    phone +
-                    "?text=" +
-                    encodeURIComponent(
-                        "Name: " +
-                        name +
-                        "\n" +
-                        "Email: " +
-                        email +
-                        "\n" +
-                        "Mobile Number: " +
-                        mobileNumber +
-                        "\n" +
-                        "Service: " +
-                        service +
-                        "\n" +
-                        "Message: " +
-                        message
-                    );
+            // Construct WhatsApp URL with pre-filled message
+            var phone = "+918500693113"; // Replace with the recipient's phone number
+            var whatsappUrl = "https://wa.me/" + phone + "?text=" +
+                encodeURIComponent("Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Mobile Number: " + mobileNumber + "\n" +
+                    "Service: " + service + "\n" +
+                    "Message: " + message);
 
-                // Redirect to WhatsApp URL
-                window.location.href = whatsappUrl;
-            });
-        function openPopup() {
-            window.open('https://maps.app.goo.gl/ZY1YUoLAjRVMxbn89', 'popup')
-        }
+            // Redirect to WhatsApp URL
+             window.open(whatsappUrl, '_blank');
+            setTimeout(function() {
+        window.location.href = "https://thepatternscompany.com/thankyou";
+    }, 2000);
+        });
+        
     </script>
+
 </body>
 
 </html>
