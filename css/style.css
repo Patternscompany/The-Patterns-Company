@@ -503,7 +503,9 @@
 .page-header .breadcrumb-item + .breadcrumb-item::before {
   color: var(--bs-white);
 }
-
+.fa-phone-alt{
+  transform: rotate(90deg);
+}
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
   font-size: 18px;
