@@ -1935,18 +1935,22 @@ document.getElementById("closePopup").addEventListener("click", function() {
                     <div class="contact-page">
                         <div class="col">
                             <div class="form-div">
-                                <form id="contactForm" method="POST">
-                                    <input type="text" id="name" class="input" name="name" required
-                                        placeholder="Full Name" />
-                                    <input type="email" class="input" id="email" name="email" required
-                                        placeholder="Email" />
-                                    <input type="text" class="input" id="number" name="phone" required
-                                        placeholder="Phone" />
-                                    <input type="text" class="input" id="service" name="service" required
-                                        placeholder="Service Required" />
-                                    <textarea class="input" name="message" id="message" required placeholder="Message"
-                                        rows="3"></textarea>
-                                    <input type="submit" name="submit" class="form-btn" value="SEND" />
+                                <form id="myForm" action="email.php" method="POST" enctype="multipart/form-data">
+                                    <input type="text" id="name" class="input" name="name" required placeholder="Full Name">
+                                    <input type="email" class="input" id="email" name="email" required placeholder="Email">
+                                    <input type="text" class="input" id="number" name="phone" required placeholder="Phone">
+                                    
+                                    <!-- Dropdown for service field -->
+                                    <select class="input" id="service" name="service" required>
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="Web Design">Web Design</option>
+                                        <option value="SEO Optimization">SEO Optimization</option>
+                                        <option value="Social Media Management">Social Media Management</option>
+                                        <option value="App Applications">App Applications</option>
+                                    </select>
+                                    
+                                    <textarea class="input" name="message" id="message" required placeholder="Message" rows="3"></textarea>
+                                    <input type="submit" name="submit" class="form-btn" value="SEND">
                                 </form>
                             </div>
                         </div>
@@ -2207,65 +2211,7 @@ document.getElementById("closePopup").addEventListener("click", function() {
     <script>
         AOS.init();
     </script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-            const video = document.getElementById('myCanvas');
-            const source = video.querySelector('source');
-            source.src = source.dataset.src;
-            video.load();
-
-            const popupLinks = document.querySelectorAll('.popupLink');
-            const closeButtons = document.querySelectorAll('.close-btn');
-
-            popupLinks.forEach(link => {
-                link.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const popupId = this.getAttribute('data-popup');
-                    document.getElementById(popupId).style.display = 'block';
-                });
-            });
-
-            closeButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const popup = this.closest('.popup');
-                    popup.style.display = 'none';
-                });
-            });
-
-            window.addEventListener('click', function (event) {
-                if (event.target.classList.contains('popup')) {
-                    event.target.style.display = 'none';
-                }
-            });
-
-        });
-        document.getElementById("contactForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get form data
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var mobileNumber = document.getElementById("number").value;
-            var service = document.getElementById("service").value;
-            var message = document.getElementById("message").value;
-
-            // Construct WhatsApp URL with pre-filled message
-            var phone = "+918500693113"; // Replace with the recipient's phone number
-            var whatsappUrl = "https://wa.me/" + phone + "?text=" +
-                encodeURIComponent("Name: " + name + "\n" +
-                    "Email: " + email + "\n" +
-                    "Mobile Number: " + mobileNumber + "\n" +
-                    "Service: " + service + "\n" +
-                    "Message: " + message);
-
-            // Redirect to WhatsApp URL
-             window.open(whatsappUrl, '_blank');
-            setTimeout(function() {
-        window.location.href = "https://thepatternscompany.com/thankyou";
-    }, 2000);
-        });
-        
-    </script>
+ 
 
 </body>
 
