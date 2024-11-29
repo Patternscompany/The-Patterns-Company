@@ -27,10 +27,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = 'tls'; // Enable TLS encryption
 
         // Email settings
-        $mail->setFrom('info@globaltekfinancialservices.com', 'Your Name'); // Replace with your email and name
+        $mail->setFrom('info@globaltekfinancialservices.com', 'Patterns Contact Form'); // Replace with your email and name
         $mail->addAddress('pandureddypatterns@gmail.com'); // Add recipient's email
 
-        $mail->Subject = "New message from $name";
+        $mail->Subject = "Message from $name";
         $mail->isHTML(true);
         $mailContent = "<p><strong>Name:</strong> $name</p>
                         <p><strong>Email:</strong> $email</p>
