@@ -1,0 +1,17 @@
+{
+    "name": "ser/htdocs",
+    "autoload": {
+        "psr-4": {
+            "Ser\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patternscompany",
+            "email": "pandureddypatterns@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

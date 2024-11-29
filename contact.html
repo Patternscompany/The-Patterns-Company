@@ -227,7 +227,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                         <div class="col">
                             <div class="form-div">
-                                <form id="myForm" method="POST">
+                                <form id="myForm" action="email.php" method="POST" enctype="multipart/form-data">
                                     <input type="text" id="name" class="input" name="name" required
                                         placeholder="Full Name">
                                     <input type="email" class="input" id="email" name="email" required
@@ -408,30 +408,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="js/main.js"></script>
 
 
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent form submission
-
-            // Get form data
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var mobileNumber = document.getElementById("number").value;
-            var service = document.getElementById("service").value;
-            var message = document.getElementById("message").value;
-
-            // Construct WhatsApp URL with pre-filled message
-            var phone = "+918500693113"; // Replace with the recipient's phone number
-            var whatsappUrl = "https://wa.me/" + phone + "?text=" +
-                encodeURIComponent("Name: " + name + "\n" +
-                    "Email: " + email + "\n" +
-                    "Mobile Number: " + mobileNumber + "\n" +
-                    "Service: " + service + "\n" +
-                    "Message: " + message);
-
-            // Redirect to WhatsApp URL
-            window.location.href = whatsappUrl;
-        });
-    </script>
+ 
 </body>
 
 </html>
