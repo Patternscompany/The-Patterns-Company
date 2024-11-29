@@ -166,7 +166,7 @@
 
     </style>
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5"
+    <!-- <div class="container-fluid page-header py-5"
         style="background-image: url(./img/app-development/steve-jobs-iphone.webp);">
         <div class="container text-center pt-5">
             <h1 class="display-2  animated slideInDown" style="color: #ffff;">App Development <br> in Hyderabad</h1>
@@ -178,8 +178,29 @@
                 </ol>
             </nav>
         </div>
-    </div>
+    </div> -->
     <!-- Page Header End -->
+
+    <div class="container-fluid app-bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="video">
+                        <video preload="metadata" id="myCanvas" loading="lazy" class="video-player" autoplay muted loop 
+                            playsinline>
+                            <source data-src="/img/video/app_development.mp4" type="video/mp4" />
+                            <!--<source data-src="/img/video/large_view.ogv" type="video/ogv">-->
+                            <!--<source data-src="/img/video/large_view.webm" type="video/webm">-->
+                            "Your browser does not support the video tag."
+                        </video>
+                        <div class="position-absolute app-banner">
+                            <h1 class="display-2 text-center animated slideInDown" style="color: #ffff;">App Development <br> in Hyderabad</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <style>
         .page-header {
@@ -189,6 +210,19 @@
         .page-header .container{
             display: grid;
             place-items: center;
+        }
+        .video video {
+            width: 100%;
+            height: 100vh;
+            /* position: static; */
+            /*clip-path: circle(100% at 100% 40%);*/
+        }
+        .app-banner{
+            top: 2%;
+            left: 30%;
+        }
+        .app-bg-gradient{
+            background-color:#FF6400;
         }
     </style>
     <!-- Fact Start -->
@@ -422,7 +456,7 @@ color: white;
 
                 <div class="col-lg-4 col-md-6  m-0 py-5">
                     <a href="#" class="h3 text-center" style="color:#7ED958">Our Services</a>
-                    <div class="mt-2 d-flex flex-row justify-content-center help-link">
+                    <div class="mt-2 d-flex flex-rowhelp-link">
                         <div class="mt-4 d-flex flex-column short-link">
                             <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
                             <a href="appdevelopment.html" class="mb-2 text-white">App Development
@@ -506,6 +540,12 @@ color: white;
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const video = document.getElementById('myCanvas');
+            const source = video.querySelector('source');
+            source.src = source.dataset.src;
+            video.load();
+        });
         const questions = document.querySelectorAll('.question');
 
         questions.forEach(question => {
