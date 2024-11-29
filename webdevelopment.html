@@ -159,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="background-image: url(./img/web-development/Tim-Berners-Lee.webp);">
+    <!-- <div class="container-fluid page-header py-5" style="background-image: url(./img/web-development/Tim-Berners-Lee.webp);">
         <div class="container text-center py-5">
             <h1 class="display-2   animated slideInDown" style="color: #ffff;">Web Development Services <br> in Hyderabad</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -170,12 +170,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </ol>
             </nav>
         </div>
+    </div> -->
+    <div class="container-fluid app-bg-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="video">
+                        <video preload="metadata" id="myCanvas" loading="lazy" class="video-player" autoplay muted loop 
+                            playsinline>
+                            <source data-src="./img/video/web_development.mp4" type="video/mp4" />
+                            <!--<source data-src="/img/video/large_view.ogv" type="video/ogv">-->
+                            <!--<source data-src="/img/video/large_view.webm" type="video/webm">-->
+                            "Your browser does not support the video tag."
+                        </video>
+                        <div class="position-absolute app-banner">
+                            <h1 class="display-2 text-center animated slideInDown" style="color: #ffff;">Web Development <br> in Hyderabad</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Page Header End -->
 <style>
 .page-header{
     height: 100vh;
 background-position: center;
+}
+.video video {
+    width: 100%;
+    height: 100vh;
+    /* position: static; */
+    /*clip-path: circle(100% at 100% 40%);*/
+}
+.app-banner{
+    top: 2%;
+    left: 30%;
+}
+.app-bg-gradient{
+    background-color:#111111;
 }
 </style>
 

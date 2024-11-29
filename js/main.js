@@ -162,63 +162,12 @@
             }, 100);
         });
     });
-    // $(document).ready(function() {
-    //     function e() {
-    //         $(".sticky-left-nav").offset().top + $(".sticky-left-nav").height() >= $("footer").offset().top - 10 && $(".sticky-left-nav").addClass("bottom-menu").removeClass("top-menu"),
-    //         $(document).scrollTop() + window.innerHeight < $("footer").offset().top && $(".sticky-left-nav").addClass("top-menu").removeClass("bottom-menu")
-    //     }
-       
-       
-    //     $(document).on("mouseenter", ".sticky-left-nav li", function() {
-    //         $(this).hasClass("mb50") || $(this).addClass("nav-active")
-    //     }),
-    //     $(document).on("mouseleave", ".sticky-left-nav li", function() {
-    //         $(this).hasClass("mb50") || $(this).removeClass("nav-active")
-    //     }),
-    //     $(window).scroll(function() {
-    //         var a = $(window).scrollTop();
-    //         a >= 10 ? $("section.scroll-section").each(function(e) {
-    //             $(this).position().top <= a - 0 && ($(".sticky-left-nav li.nav-active").removeClass("nav-active mb50"),
-    //             $(".sticky-left-nav li").eq(e).addClass("nav-active mb50"))
-    //         }) : $(".stick-left-nav-ul li.nav-active-menu").removeClass("nav-active-menu"),
-    //         e()
-    //     }),
-    //     $("nav.sticky-left-nav a").click(function(e) {
-    //         e.preventDefault(),
-    //         $(this).parent().addClass("nav-active"),
-    //         $("html, body").animate({
-    //             scrollTop: $($(this).attr("href")).offset().top +1
-    //         }, 500)
-    //     })
-    // }); 
-
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     var video = document.getElementById('myCanvas');
-
-    //     function tryPlayVideo() {
-    //         video.muted = true; // Start muted to comply with autoplay policy
-    //         var playPromise = video.play();
-
-    //         if (playPromise !== undefined) {
-    //             playPromise.then(function() {
-    //                 // Autoplay started!
-    //                 console.log('Autoplay started successfully');
-    //                 video.muted = false;
-    //                 playPromise;
-    //             }).catch(function(error) {
-    //                 // Autoplay was prevented
-    //                 console.log('Autoplay was prevented: ', error);
-    //                 // Video remains muted to ensure playback
-    //                 video.muted = true;
-    //             });
-    //         }
-    //     }
-
-    //     // Ensure video can be played through to avoid premature play attempts
-    //     video.addEventListener('canplaythrough', function() {
-    //         tryPlayVideo();
-    //     });
-    // });
+    document.addEventListener('DOMContentLoaded', function () {
+        const video = document.getElementById('myCanvas');
+        const source = video.querySelector('source');
+        source.src = source.dataset.src;
+        video.load();
+    });
 
     
 })(jQuery);
