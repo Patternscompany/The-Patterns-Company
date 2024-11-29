@@ -228,18 +228,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="col">
                             <div class="form-div">
                                 <form id="myForm" action="email.php" method="POST" enctype="multipart/form-data">
-                                    <input type="text" id="name" class="input" name="name" required
-                                        placeholder="Full Name">
-                                    <input type="email" class="input" id="email" name="email" required
-                                        placeholder="Email">
-                                    <input type="text" class="input" id="number" name="phone" required
-                                        placeholder="Phone">
-                                    <input type="text" class="input" id="service" name="service" required
-                                        placeholder="Service Required">
-                                    <textarea class="input" name="message" id="message" required placeholder="Message"
-                                        rows="3"></textarea>
+                                    <input type="text" id="name" class="input" name="name" required placeholder="Full Name">
+                                    <input type="email" class="input" id="email" name="email" required placeholder="Email">
+                                    <input type="text" class="input" id="number" name="phone" required placeholder="Phone">
+                                    
+                                    <!-- Dropdown for service field -->
+                                    <select class="input" id="service" name="service" required>
+                                        <option value="" disabled selected>Select Service</option>
+                                        <option value="Web Design">Web Design</option>
+                                        <option value="SEO Optimization">SEO Optimization</option>
+                                        <option value="Social Media Management">Social Media Management</option>
+                                        <option value="App Applications">App Applications</option>
+                                    </select>
+                                    
+                                    <textarea class="input" name="message" id="message" required placeholder="Message" rows="3"></textarea>
                                     <input type="submit" name="submit" class="form-btn" value="SEND">
                                 </form>
+                                
                             </div>
                         </div>
                     </div>
