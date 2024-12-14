@@ -30,6 +30,12 @@
   font-weight: normal; /* Font weight (normal, bold, etc.) */
   font-style: normal;  /* Font style (normal, italic, etc.) */
 }
+@font-face {
+  font-family: 'Brusher'; /* Name of the font */
+  src: url('/fonts/Brusher.woff')  format('woff'); /* Path to the font file */
+  font-weight: normal; /* Font weight (normal, bold, etc.) */
+  font-style: normal;  /* Font style (normal, italic, etc.) */
+}
 
 
 :root {
