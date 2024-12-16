@@ -325,7 +325,7 @@
                 <div>
                     <p class="year"> <img src="./img/about/christmas-tree-unscreen.gif" alt=""></p>
                     <h3>Merry Christmas & Happy New Year</h3>
-                   
+                   <h4>2025</h4>
                   
                 </div>
                 <a href="tel:+918500693113" class="btn-ads">Call Us</a>
@@ -418,9 +418,31 @@ color: white;
     /* background-color:red; */
     font-family: "Brusher" !important;
     color: white;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     font-size: 2rem;
 }
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.form h4 {
+    font-family: "Brusher" !important;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #7ed958; /* Fallback for browsers that don't support gradients */
+    background: linear-gradient(90deg, #000000, #7ed958, #fff); /* Define your gradient colors */
+    background-size: 200% 200%; /* Makes the gradient larger than the element for smooth movement */
+    -webkit-background-clip: text; /* Clips the gradient to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text itself transparent to show the gradient */
+    animation: gradient-move 4s linear infinite; /* Applies the animation */
+}
+
+
 .form input {
     width: 100%;
     padding: 10px;
