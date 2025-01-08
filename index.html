@@ -318,13 +318,13 @@
         <div class="popup-content-ads">
             <span class="close-btn" id="closePopup">&times;</span>
             <div>
-                <img src="img/about-1.jpg" alt="Popup Image" class="popup-image-ads">
+                <img src="img/about/happy-pongal.jpg" alt="Popup Image" class="popup-image-ads">
 
             </div>
             <form class="form" action="tel:+918500693113">
                 <div>
-                    <p class="year"> <img src="./img/about/christmas-tree-unscreen.gif" alt=""></p>
-                    <h3>Merry Christmas & Happy New Year</h3>
+                    <p class="year"> <img src="./img/about/pongal.png" alt="The Patterns Company"></p>
+                    <h3>Happy New Year & Happy Pongal</h3>
                    <h4>2025</h4>
                   
                 </div>
@@ -367,15 +367,16 @@ closeButton.addEventListener('click', () => {
     color: #259c4c;
 }
 .popup-ads .year img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    object-fit: scale-down;
 }
 .popup-content-ads {
-    background-color:#c60f0f;
+    background: linear-gradient(45deg, #FFD700, #FFA500, #228B22, #8B4513, #FF4500);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
-    width: 90%;
+    width: auto;
     text-align: center;
     position: relative;
     display: flex;
@@ -384,11 +385,7 @@ closeButton.addEventListener('click', () => {
 
     /* flex-direction: column; */
 }
-@media(max-width:992px){
-    .popup-content-ads{
-        flex-wrap: wrap;
-    }
-}
+
 .close-btn {
     position: absolute;
     top: 10px;
@@ -398,13 +395,12 @@ closeButton.addEventListener('click', () => {
 }
 
 .popup-image-ads {
-    width: 300px;
-    height: 300px;
+   
     margin-bottom: 15px;
     object-fit: cover;
 }
 .popup-image-ads{
-    width: 100%;
+    width: 300px;
     height: 100%;
 }
 .form{
@@ -414,12 +410,14 @@ closeButton.addEventListener('click', () => {
 font-size: 1.5rem !important;
 color: white;
 }
+
 .form h3{
     /* background-color:red; */
-    font-family: "Brusher" !important;
+    font-family: "Aloevera" !important;
     color: white;
     /* margin-bottom: 2rem; */
     font-size: 2rem;
+    letter-spacing: 0.2px;
 }
 @keyframes gradient-move {
     0% {
@@ -456,10 +454,10 @@ color: white;
     background-color: #259c4c;
     outline: 0;
     border: 0;
-    padding: 12px 22px;
+    padding: 8px 18px;
     color: white;
     font-weight: 900;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     border-radius: 100px;
 }
 
@@ -467,6 +465,26 @@ color: white;
     .popup-content-ads {
         width: 90%;
         padding: 15px;
+    }
+   
+}
+@media (max-width: 992px) {
+   
+    .form h3{
+        font-size: 1rem;
+    }
+    .form h4{
+        font-size: 1.1rem;
+    }
+    .popup-ads .year img{
+        width: 30px;
+        height: 100%;
+    }
+    .popup-image-ads{
+width: 150px;
+    }
+    .form .btn-ads{
+        padding: 5px 15px;
     }
 }
       
