@@ -318,13 +318,13 @@
         <div class="popup-content-ads">
             <span class="close-btn" id="closePopup">&times;</span>
             <div>
-                <img src="img/about/happy-pongal.jpg" alt="Popup Image" class="popup-image-ads">
+                <img src="img/about/maha-shivratri-greeting-card.png" alt="Popup Image" class="popup-image-ads">
 
             </div>
             <form class="form" action="tel:+918500693113">
                 <div>
-                    <p class="year"> <img src="./img/about/pongal.png" alt="The Patterns Company"></p>
-                    <h3>Happy New Year & Happy Pongal</h3>
+                    <!-- <p class="year"> <img src="./img/about/pongal.png" alt="The Patterns Company"></p> -->
+                    <p class="wish">Wishing you digital success, unwavering determination, and infinite growth this Maha Shivaratri. Om Namah Shivaya! </p>
                    <h4>2025</h4>
                   
                 </div>
@@ -351,6 +351,9 @@ closeButton.addEventListener('click', () => {
 });
 </script>
 <style>
+    .wish{
+        color: white;
+    }
        .popup-ads {
     display: none; 
     position: fixed;
@@ -372,7 +375,10 @@ closeButton.addEventListener('click', () => {
     object-fit: scale-down;
 }
 .popup-content-ads {
-    background: linear-gradient(45deg, #FFD700, #FFA500, #228B22, #8B4513, #FF4500);
+    /* background: linear-gradient(45deg, #FFD700, #FFA500, #228B22, #8B4513, #FF4500); */
+    background: linear-gradient(135deg, #ff512f, #f09819);
+
+
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -388,7 +394,7 @@ closeButton.addEventListener('click', () => {
 
 .close-btn {
     position: absolute;
-    top: 10px;
+    top: 4px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
@@ -433,7 +439,9 @@ color: white;
     font-size: 2.5rem;
     font-weight: 900;
     color: #7ed958; /* Fallback for browsers that don't support gradients */
-    background: linear-gradient(90deg, #000000, #7ed958, #fff); /* Define your gradient colors */
+    background: linear-gradient(135deg, #3a6186, #89253e);
+
+    /* Define your gradient colors */
     background-size: 200% 200%; /* Makes the gradient larger than the element for smooth movement */
     -webkit-background-clip: text; /* Clips the gradient to the text */
     -webkit-text-fill-color: transparent; /* Makes the text itself transparent to show the gradient */
@@ -451,13 +459,14 @@ color: white;
 
 .form .btn-ads {
     width: 100%;
-    background-color: #259c4c;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+
     outline: 0;
     border: 0;
     padding: 8px 18px;
     color: white;
     font-weight: 900;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow:inset 2px 2px 4px rgba(0, 0, 0, 0.7);
     border-radius: 100px;
 }
 
