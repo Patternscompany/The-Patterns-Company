@@ -80,6 +80,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
 </head>
 
 <body>
@@ -694,6 +696,15 @@ document.getElementById("closePopup").addEventListener("click", function() {
 
     <!-- Fact End -->
 
+
+
+
+
+
+
+
+
+    
     <style>
         .lets {
             font-size: 2rem;
@@ -2076,6 +2087,10 @@ document.getElementById("closePopup").addEventListener("click", function() {
             </nav>
         </div>
     </div>
+    <div id="visitor-feed" style="padding: 10px; background: #f9f9f9; border: 1px solid #ddd;">
+        <h3>🔴 Live Traffic Feed</h3>
+      </div>
+      
 
     <!-- Footer Start -->
     <section class="container-fluid footer wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
@@ -2271,8 +2286,48 @@ document.getElementById("closePopup").addEventListener("click", function() {
     <script>
         AOS.init();
     </script>
+
  
 
+
+
+
+<script>
+    fetch('https://ipapi.co/json/')
+      .then(response => {
+        if (!response.ok) throw new Error('Failed to fetch IP data');
+        return response.json();
+      })
+      .then(data => {
+        const visitorData = {
+          ip: data.ip || "Unknown",
+          city: data.city || "Unknown",
+          region: data.region || "Unknown",
+          country: data.country_name || "Unknown",
+          flag: data.country_code 
+            ? `https://flagcdn.com/24x18/${data.country_code.toLowerCase()}.png` 
+            : '',
+          time: new Date().toLocaleString(),
+          page: window.location.pathname
+        };
+  
+        // Display on website
+        const feed = document.getElementById("visitor-feed");
+        const entry = document.createElement("div");
+        entry.style.padding = "8px 0";
+        entry.style.borderBottom = "1px solid #ccc";
+        entry.innerHTML = `
+          <img src="${visitorData.flag}" alt="${visitorData.country}" />
+          A visitor from <strong>${visitorData.city}, ${visitorData.country}</strong>
+          viewed <em>${visitorData.page}</em><br>
+          <small>${visitorData.time}</small>
+        `;
+        feed.appendChild(entry);
+      })
+      .catch(err => console.error('Error getting visitor data:', err));
+  </script>
+
+  
 </body>
 
 </html>
