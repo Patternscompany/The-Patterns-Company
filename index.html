@@ -1243,6 +1243,153 @@ document.getElementById("closePopup").addEventListener("click", function() {
         }
     </style>
 
+
+
+<style>
+  .category-card {
+    position: relative;
+    height: 250px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+
+  .category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2); /* dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .category-overlay h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .category-success {
+    border: 3px solid #28a745;
+  }
+
+  .category-warning {
+    border: 3px solid #ffc107;
+  }
+</style>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Industries We’ve Served</h2>
+    <div class="row g-4">
+
+      <!-- Interior -->
+      <div class="col-md-4">
+        <div class="category-card category-success" style="background-image: url('/img/projects/interiors.jpg');">
+          <div class="category-overlay">
+            <h5>Interior</h5>
+            <p>Custom websites & branding for interior design clients.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dental Clinics -->
+      <div class="col-md-4">
+        <div class="category-card category-success" style="background-image: url('/img/projects/dental.png');">
+          <div class="category-overlay">
+            <h5>Dental Clinics</h5>
+            <p>Professional dental websites with booking features.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Care -->
+      <div class="col-md-4">
+        <div class="category-card category-success" style="background-image: url('healthcare.jpg');">
+          <div class="category-overlay">
+            <h5>Health Care</h5>
+            <p>Web solutions for clinics, hospitals & health startups.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fashion -->
+      <div class="col-md-4">
+        <div class="category-card category-success" style="background-image: url('fashion.jpg');">
+          <div class="category-overlay">
+            <h5>Fashion</h5>
+            <p>Modern portfolios and e-commerce for fashion brands.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saloons -->
+      <div class="col-md-4">
+        <div class="category-card category-success" style="background-image: url('saloon.jpg');">
+          <div class="category-overlay">
+            <h5>Saloons</h5>
+            <p>Salon booking websites with service listings and offers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurants -->
+      <div class="col-md-4">
+        <div class="category-card category-warning" style="background-image: url('restaurant.jpg');">
+          <div class="category-overlay">
+            <h5>Restaurants / Cafe / Bar-Restro</h5>
+            <p>Looking to collaborate with food & beverage businesses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car Detailing -->
+      <div class="col-md-4">
+        <div class="category-card category-warning" style="background-image: url('car.jpg');">
+          <div class="category-overlay">
+            <h5>Car Detailing / Rental / Showrooms</h5>
+            <p>Web design solutions for car and auto businesses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="col-md-4">
+        <div class="category-card category-warning" style="background-image: url('education.jpg');">
+          <div class="category-overlay">
+            <h5>Educational / Private Institutions</h5>
+            <p>We want to work with schools, colleges, and institutes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour & Travel -->
+      <div class="col-md-4">
+        <div class="category-card category-warning" style="background-image: url('travel.jpg');">
+          <div class="category-overlay">
+            <h5>Tour & Travel</h5>
+            <p>Looking to build beautiful sites for travel businesses.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
     <section class="container-fluid py-5 team scroll-section" id="team">
         <div class="container py-5">
             <div class="text-left mx-auto wow fadeIn" data-wow-delay=".3s">
