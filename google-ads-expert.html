@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Google Ads & Digital Marketing Expert | The Patterns Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Grow your business with expert Google Ads, SEO, and high-converting websites. Get a free consultation from The Patterns Company.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #7ed958;
+            --secondary: #181b18;
+            --accent: #f09819;
+            --text-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .premium-bg {
+            background: linear-gradient(135deg, #181b18 0%, #2c312c 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(45deg, var(--primary), #b0ff8a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-lp {
+            padding: 120px 0 80px;
+            position: relative;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-consultation {
+            background: var(--primary);
+            color: var(--secondary);
+            border: none;
+        }
+
+        .btn-consultation:hover {
+            background: #6bc44a;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(126, 217, 88, 0.3);
+            color: var(--secondary);
+        }
+
+        .btn-outline-white {
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp-lp {
+            background: #25D366;
+            color: white;
+            border: none;
+        }
+
+        footer {
+            background-color: black;
+        }
+
+        .btn-whatsapp-lp:hover {
+            background: #128C7E;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* Lead Form */
+        .lead-form-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+            border-top: 5px solid var(--primary);
+        }
+
+        .form-control-lp {
+            border-radius: 10px;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .form-control-lp:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(126, 217, 88, 0.2);
+            outline: none;
+        }
+
+        /* Services */
+        .service-card-lp {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.4s;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+
+        .service-card-lp:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: var(--primary);
+        }
+
+        .service-icon-lp {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        /* Process */
+        .process-step {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Trust highlights */
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .trust-item i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 991px) {
+            .hero-lp {
+                padding: 60px 0 40px;
+                text-align: center;
+            }
+
+            .trust-highlights {
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cta-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (Simplified for LP) -->
+    <nav class="navbar navbar-dark premium-bg sticky-top py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo-white-lack.png" alt="TPC Logo" style="width: 180px" />
+            </a>
+            <div class="d-none d-lg-block">
+                <a href="tel:+918500693113" class="btn btn-consultation btn-sm cta-btn">
+                    <i class="fa fa-phone-alt"></i> Call +91 85006 93113
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-lp premium-bg text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4 text-white">Grow Your Business with Expert <span
+                            class="text-gradient">Digital Marketing</span></h1>
+                    <p class="lead mb-5 opacity-75">Get more leads, calls, and sales using proven Google Ads, SEO,
+                        Social Media Marketing, and high-converting websites.</p>
+
+                    <div class="cta-group d-flex flex-wrap gap-3 mb-5">
+                        <a href="#lead-form" class="cta-btn btn-consultation">Get Free Consultation</a>
+                        <a href="tel:+918500693113" class="cta-btn btn-outline-white"><i class="fa fa-phone-alt"></i>
+                            Call Now</a>
+                        <a href="https://wa.me/918500693113" class="cta-btn btn-whatsapp-lp"><i
+                                class="fab fa-whatsapp"></i> WhatsApp Us</a>
+                    </div>
+
+                    <div class="trust-highlights d-flex flex-wrap gap-4 mt-4">
+                        <div class="trust-item"><i class="fa fa-check-circle"></i> 5+ Years Experience</div>
+                        <div class="trust-item"><i class="fa fa-chart-line"></i> Result-Driven</div>
+                        <div class="trust-item"><i class="fa fa-tags"></i> Affordable Pricing</div>
+                        <div class="trust-item"><i class="fa fa-headset"></i> Dedicated Support</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0" id="lead-form" data-aos="fade-left">
+                    <div class="lead-form-card">
+                        <h3 class="text-dark fw-bold mb-4">Get a Free Business Consultation</h3>
+                        <form id="lpLeadForm">
+                            <input type="text" class="form-control form-control-lp" placeholder="Full Name" required>
+                            <input type="tel" class="form-control form-control-lp" placeholder="Phone Number" required>
+                            <input type="email" class="form-control form-control-lp" placeholder="Email Address"
+                                required>
+                            <select class="form-select form-control-lp" required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option>Digital Marketing</option>
+                                <option>Google Ads</option>
+                                <option>Website Design</option>
+                                <option>SEO</option>
+                                <option>Social Media Marketing</option>
+                            </select>
+                            <button type="submit" class="cta-btn btn-consultation w-100 mt-3 py-3">Get Free
+                                Quote</button>
+                            <p class="text-muted small text-center mt-3 mb-0">We respect your privacy. Your information
+                                is 100% secure.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h6 class="text-primary text-uppercase fw-bold letter-spacing-2">What We Offer</h6>
+                <h2 class="display-5 fw-bold">Our Professional Services</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.1s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fab fa-google"></i></div>
+                        <h4 class="fw-bold">Google Ads Management</h4>
+                        <p class="text-muted">Generate instant leads with professionally managed ad campaigns tailored
+                            for ROI.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.2s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fa fa-laptop-code"></i></div>
+                        <h4 class="fw-bold">Website Design</h4>
+                        <p class="text-muted">Fast, responsive, and conversion-focused designs that turn visitors into
+                            customers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.3s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fa fa-search"></i></div>
+                        <h4 class="fw-bold">SEO Optimization</h4>
+                        <p class="text-muted">Improve your Google rankings and organic traffic with our data-driven
+                            strategies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.4s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fab fa-facebook-f"></i></div>
+                        <h4 class="fw-bold">Social Media Marketing</h4>
+                        <p class="text-muted">Grow your brand presence and engagement across platforms like FB, IG &
+                            LinkedIn.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.5s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fa fa-file-invoice"></i></div>
+                        <h4 class="fw-bold">Landing Page Design</h4>
+                        <p class="text-muted">High-converting pages built specifically for paid ads to maximize your ad
+                            spend.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-wow-delay="0.6s">
+                    <div class="service-card-lp">
+                        <div class="service-icon-lp"><i class="fa fa-bullhorn"></i></div>
+                        <h4 class="fw-bold">Brand Identity</h4>
+                        <p class="text-muted">Complete branding solutions including logos, catalogs, and marketing
+                            collaterals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Why The Patterns Company?</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="step-number me-3 fs-3"><i class="fa fa-user-tie"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Experienced Professionals</h5>
+                                <p class="mb-0 text-muted">Dedicated team of marketing experts focused on your success.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="step-number me-3 fs-3"><i class="fa fa-chess-knight"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Customized Strategies</h5>
+                                <p class="mb-0 text-muted">We build plans specific to your business goals and industry.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center mb-4">
+                            <div class="step-number me-3 fs-3"><i class="fa fa-chart-pie"></i></div>
+                            <div>
+                                <h5 class="fw-bold mb-0">Transparent Reporting</h5>
+                                <p class="mb-0 text-muted">Clear tracking and reporting on your campaign performance.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="./img/about-2.jpg" class="img-fluid rounded-3 shadow-lg" alt="Why Choose Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-5 text-white">Simple 3-Step Process</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="zoom-in" data-wow-delay="0.1s">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Free Consultation</h4>
+                        <p class="opacity-75">We understand your business goals and current challenges.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-wow-delay="0.3s">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Strategy & Setup</h4>
+                        <p class="opacity-75">We build a customized marketing plan designed for growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-wow-delay="0.5s">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Launch & Optimize</h4>
+                        <p class="opacity-75">We launch campaigns and optimize continuously for best results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5 premium-bg text-white text-center">
+        <div class="container py-5" data-aos="flip-up">
+            <h2 class="display-4 fw-bold mb-4 text-white">Ready to Grow Your Business Online?</h2>
+            <p class="lead mb-5">Don't wait for success, create it with our professional digital marketing services.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="tel:+918500693113" class="cta-btn btn-outline-white"><i class="fa fa-phone-alt"></i> Call
+                    Now</a>
+                <a href="https://wa.me/918500693113" class="cta-btn btn-whatsapp-lp"><i class="fab fa-whatsapp"></i>
+                    WhatsApp Us</a>
+                <a href="#lead-form" class="cta-btn btn-consultation">Get Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                    <img src="./img/logo-white-lack.png" style="width: 150px" class="mb-3">
+                    <p class="opacity-50">Digital Marketing & Website Design Services</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-1"><i class="fa fa-phone-alt text-primary"></i> +91 85006 93113</p>
+                    <p class="mb-4"><i class="fa fa-envelope text-primary"></i> info@thepatternscompany.com</p>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 small opacity-50">
+                        <a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a> |
+                        <a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="opacity-25 my-4">
+            <div class="text-center small opacity-50">
+                &copy; 2024 The Patterns Company. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>
