@@ -4,8 +4,6 @@
  */
 
 let allCourses = [];
-let displayLimit = 30;
-const INITIAL_LIMIT = 30;
 
 function initCourses() {
     // Combine all parts
@@ -17,41 +15,21 @@ function initCourses() {
 
     allCourses = allRaw.split(';').map(row => row.split('|')).filter(c => c.length >= 3);
     
-    // Initial Render
-    renderTable(allCourses.slice(0, displayLimit));
+    // Initial Render - ALL courses
+    renderTable(allCourses);
     
-    // Setup View More Button
-    const showMoreBtn = document.getElementById('showMoreBtn');
-    if (showMoreBtn) {
-        showMoreBtn.addEventListener('click', () => {
-            if (displayLimit < allCourses.length) {
-                displayLimit = allCourses.length; // Show all
-                showMoreBtn.innerText = "Show Less";
-                renderTable(allCourses);
-            } else {
-                displayLimit = INITIAL_LIMIT;
-                showMoreBtn.innerText = "Show More Courses";
-                renderTable(allCourses.slice(0, displayLimit));
-                // Scroll back to table top
-                document.getElementById('courseTable').scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    }
-
-    // Connect Search (Override the inline script if necessary, or just use the global array)
+    // Connect Search
     const searchInput = document.getElementById('courseSearch');
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const val = e.target.value.toLowerCase();
             if (val === '') {
-                renderTable(allCourses.slice(0, displayLimit));
-                if (showMoreBtn) showMoreBtn.style.display = 'inline-block';
+                renderTable(allCourses);
             } else {
                 const filtered = allCourses.filter(c => 
                     c[1].toLowerCase().includes(val) || c[0].toLowerCase().includes(val)
                 );
                 renderTable(filtered);
-                if (showMoreBtn) showMoreBtn.style.display = 'none';
             }
         });
     }

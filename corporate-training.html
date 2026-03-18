@@ -107,9 +107,19 @@
         .table-responsive-lp {
             background: white;
             border-radius: 15px;
-            overflow: hidden;
+            overflow-y: auto;
+            max-height: 80vh;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
             margin-bottom: 50px;
+        }
+
+        .course-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--secondary);
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .course-table thead tr {
@@ -245,6 +255,11 @@
 
         h1.display-3 {
             color: white;
+        }
+
+        .upskill .btn-primary {
+            background-color: #000;
+
         }
     </style>
 
@@ -397,10 +412,7 @@
                         <!-- Courses will be loaded here via JS -->
                     </tbody>
                 </table>
-                <!-- Load More Button -->
-                <div class="text-center py-4 border-top">
-                    <button id="showMoreBtn" class="btn btn-secondary rounded-pill px-5">Show More Courses</button>
-                </div>
+                <!-- Table scrollable via CSS -->
 
                 <div id="noResults" class="no-results">
                     <i class="fa fa-search-minus fa-3x mb-3 opacity-25"></i>
@@ -408,6 +420,16 @@
                     <p>Try different keywords or browse the full list.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-secondary upskill text-white text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="display-6 fw-bold mb-3 text-white">Ready to Upskill Your Team?</h2>
+            <p class="lead mb-4 opacity-75">Get in touch with our training consultants and enroll in the right
+                certification path for your career or organization.</p>
+            <a href="contact.html" class="btn btn-primary rounded-pill px-5 py-3 fw-bold">Enquire Now</a>
         </div>
     </section>
 
