@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Corporate Training & IT Certifications | The Patterns Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="World-class IT training and solutions provider. Professional certifications in Azure, AWS, Cisco, VMware, and more.">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #7ed958;
+            --secondary: #181b18;
+            --dark-accent: #2c312c;
+        }
+
+        .hero-training {
+            background: linear-gradient(rgba(24, 27, 24, 0.8), rgba(24, 27, 24, 0.8)), url('img/about-2.jpg') center/cover no-repeat;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .section-header {
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .service-box-lp {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: 0.3s;
+            border: 1px solid #eee;
+        }
+
+        .service-box-lp:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .service-icon-lp {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 25px 15px 50px;
+            border-radius: 50px;
+            border: 2px solid #eee;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .search-input:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 5px 20px rgba(126, 217, 88, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        .table-responsive-lp {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            margin-bottom: 50px;
+        }
+
+        .course-table thead tr {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .course-table thead:hover tr {
+            background: var(--secondary) !important;
+        }
+
+        .course-table th {
+            padding: 15px 20px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .course-table td {
+            padding: 12px 20px;
+            vertical-align: middle;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .course-table tr:hover {
+            background-color: #f9fff6;
+        }
+
+        .duration-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 50px;
+            color: #777;
+        }
+
+        .sticky {
+            background-color: #1a1a1a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div class="sticky">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <a href="index.html" class="navbar-brand">
+                    <!-- <h1 class="text-white fw-bold d-block">High<span class="text-secondary">Tech</span> </h1> -->
+                    <img src="./img/we-create-future.jpg" alt="" style="width: 200px" />
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+
+                        <div class="nav-item dropdown active">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu rounded">
+                                <a href="webdevelopment.html" class="dropdown-item king">
+                                    Web Development
+                                </a>
+                                <a href="appdevelopment.html" class="dropdown-item king">
+                                    App Development
+                                </a>
+                                <a href="socialmediamarketing.html" class="dropdown-item king">SMM (Social Media
+                                    Marketing)
+                                </a>
+                                <a href="searchengineoptimization.html" class="dropdown-item king">SEO (Search Engine
+                                    Optimization)
+                                </a>
+
+                                <a href="ecommerce.html" class="dropdown-item king">
+                                    E-Commerce
+                                </a>
+                                <a href="graphicdesigning.html" class="dropdown-item king">
+                                    Graphic Designing
+                                </a>
+                                <a href="googleads.html" class="dropdown-item king">Google Ads
+                                </a>
+                                <a href="corporate-training.html" class="dropdown-item king active">Corporate Training
+                                </a>
+                            </div>
+                        </div>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+
+                        <a href="careers.html" class="nav-item nav-link">Careers</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="tel:+918500693113" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-white fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center ms-4">
+                        <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <style>
+        .fa-phone-alt {
+            transform: rotate(90deg);
+        }
+
+        h1.display-3 {
+            color: white;
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section class="hero-training">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-3 fw-bold mb-4">World-Class IT Training & <span class="text-primary">Solutions
+                    Provider</span></h1>
+            <p class="lead">Empowering professionals with industry-leading certifications and cutting-edge technology
+                expertise.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Service Sections -->
+    <section class="py-5 overflow-hidden">
+        <div class="container">
+            <!-- World clas section -->
+            <div class="row align-items-center mb-5 pb-lg-5 flex-row-reverse" data-aos="fade-left">
+                <div class="col-lg-6 mb-4 mb-lg-0 px-lg-5">
+                    <img src="img/world-class.png" alt="Cyber Security" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <div class="section-header ms-0">
+                        <h2 class="display-6 fw-bold">World-Class IT Training & Solutions Provider</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">We @ TPC offer network design & strategy, implementation, system
+                        integrated services, security practices & are specialized in providing professional services
+                        consulting & certified training.</p>
+                    <p>Our TPC team focuses on enhancing the success of its business partners, associates, & investors
+                        while embracing its values of innovation, accountability, integrity, teamwork & respect,
+                        learning & social responsibility.</p>
+                    <p>We provide training & professional services for the IT community of all Asia Pacific including
+                        India & the Middle East — specialized in providing state-of-art technical trainings &
+                        certifications on all popular IT Technologies available globally.</p>
+
+                </div>
+            </div>
+            <!-- Networking Section -->
+            <div class="row align-items-center mb-5 pb-lg-5" data-aos="fade-right">
+                <div class="col-lg-6 mb-4 mb-lg-0 px-lg-5">
+                    <img src="img/networking.png" alt="Networking Solutions" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <div class="section-header ms-0">
+                        <h2 class="display-6 fw-bold">Networking Services & Solutions</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">Our networking experts provide end-to-end solutions, from complex
+                        architecture design to seamless cloud integrations.</p>
+                    <p>We specialize in Cisco, Juniper, and Aruba technologies, ensuring your enterprise stays
+                        connected, scalable, and high-performing. Whether it's SD-WAN deployments or traditional routing
+                        and switching, we deliver robustness at every layer of your infrastructure, ensuring maximum
+                        uptime and security.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Enterprise Design &
+                            Implementation</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> SD-WAN & Cloud
+                            Connectivity</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> 24/7 Managed Network Services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Cyber Security Section -->
+            <div class="row align-items-center mb-5 pb-lg-5 flex-row-reverse" data-aos="fade-left">
+                <div class="col-lg-6 mb-4 mb-lg-0 px-lg-5">
+                    <img src="img/cybersecurity.png" alt="Cyber Security" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <div class="section-header ms-0">
+                        <h2 class="display-6 fw-bold">Cyber Security & Data Center Services</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">Security is at the heart of everything we do. Our team conducts
+                        rigorous audits and defense strategies.</p>
+                    <p>From firewall management to SOC operations and SOC-as-a-Service, we ensure your data centers
+                        remain resilient against evolving cyber threats. We also offer comprehensive disaster recovery
+                        planning to minimize downtime and protect your most critical business assets from any
+                        disruption.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> SOC Operations & Audits
+                        </li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Threat Protection &
+                            Firewall Management</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Data Center Resilience & DR Planning
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="row align-items-center" data-aos="fade-right">
+                <div class="col-lg-6 mb-4 mb-lg-0 px-lg-5">
+                    <img src="img/professional-it.png" alt="IT Certifications" class="img-fluid rounded-3 shadow-lg">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <div class="section-header ms-0">
+                        <h2 class="display-6 fw-bold">Professional IT Certifications & Training</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">As a leading training partner, we offer over 900 globally recognized
+                        certification paths.</p>
+                    <p>Our curriculum covers Azure, AWS, Google Cloud, VMware, and more. Taught by certified industry
+                        veterans, our programs combine theoretical knowledge with hands-on labs, preparing your
+                        workforce for the challenges of tomorrow’s digital landscape with practical, real-world
+                        experience.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> 900+ Multi-Vendor
+                            Certifications</li>
+                        <li class="mb-2"><i class="fa fa-check-circle text-primary me-2"></i> Certified Industry
+                            Instructors</li>
+                        <li><i class="fa fa-check-circle text-primary me-2"></i> Hands-on Lab Environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course List Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Our Course List</h2>
+                <p class="text-muted">Certified training programs covering the most in-demand IT technologies globally.
+                </p>
+            </div>
+
+            <!-- Search and Controls -->
+            <div class="row align-items-center mb-4" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="search-container mt-0 mb-0 ms-0 me-auto">
+                        <i class="fa fa-search search-icon"></i>
+                        <input type="text" id="courseSearch" class="search-input"
+                            placeholder="Search by course name or certification...">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end mt-3 mt-lg-0">
+                    <a href="img/courses-list.pdf" download class="btn btn-primary rounded-pill px-4">
+                        <i class="fa fa-file-pdf me-2"></i> Download Full Course List (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-responsive-lp" data-aos="fade-up">
+                <table class="table course-table mb-0" id="courseTable">
+                    <thead>
+                        <tr>
+                            <th width="80">#</th>
+                            <th>Course / Certification</th>
+                            <th width="150">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courseTableBody">
+                        <!-- Courses will be loaded here via JS -->
+                    </tbody>
+                </table>
+                <!-- Load More Button -->
+                <div class="text-center py-4 border-top">
+                    <button id="showMoreBtn" class="btn btn-secondary rounded-pill px-5">Show More Courses</button>
+                </div>
+
+                <div id="noResults" class="no-results">
+                    <i class="fa fa-search-minus fa-3x mb-3 opacity-25"></i>
+                    <h4>No courses found matching your search.</h4>
+                    <p>Try different keywords or browse the full list.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <section class="container-fluid footer wow fadeIn scroll-section" data-wow-delay=".3s" id="contact">
+        <div class="container" style="max-width: 100%">
+            <div class="row g-5 position-relative m-0 p-0">
+                <div class="col-lg-3 col-md-6 text-center m-0">
+                    <a href="index.html">
+                        <img src="./img/tpchhhhhhhhh.png" />
+                    </a>
+                    <h5 style="color: #f3f5f2">THE PATTERNS COMPANY</h5>
+                </div>
+                <div class="col-lg-2 col-md-6 m-0 py-5">
+                    <a href="#" class="h3 text-primary">Quick Links</a>
+                    <div class="mt-2 d-flex flex-row justify-content-around help-link">
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="index.html" class="mb-2 text-white">Home </a>
+                            <a href="about.html" class="mb-2 text-white">About </a>
+                            <a href="service.html" class="mb-2 text-white">Services </a>
+                            <a href="blog.html" class="mb-2 text-white">Blog</a>
+                        </div>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="gallery.html" class="mb-2 text-white">Gallery</a>
+                            <a href="careers.html" class="mb-2 text-white">Careers</a>
+                            <a href="contact.html" class="mb-2 text-white">Contact </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 m-0 py-5">
+                    <a href="#" class="h3 text-center text-primary">Our Services</a>
+                    <div class="mt-2 d-flex flex-row help-link">
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="webdevelopment.html" class="mb-2 text-white">Web Development</a>
+                            <a href="appdevelopment.html" class="mb-2 text-white">App Development
+                            </a>
+
+                            <a href="socialmediamarketing.html" class="mb-2 text-white">Social Media Marketing</a>
+                            <a href="searchengineoptimization.html" class="mb-2 text-white">Search Engine
+                                Optimization</a>
+                        </div>
+                        <div class="mt-4 d-flex flex-column short-link">
+                            <a href="ecommerce.html" class="mb-2 text-white">E-Commerce</a>
+                            <a href="graphicdesigning.html" class="mb-2 text-white">Graphic Designing</a>
+                            <a href="googleads.html" class="mb-2 text-white">Google Ads </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./img/char222.png" style="object-fit: scale-down; max-width: 100%" />
+                </div>
+            </div>
+
+            <hr class="text-light mt-4 mb-4" />
+            <div class="row pb-3 d-flex align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <div class="d-flex hightech-link align-items-center justify-content-center py-3">
+                        <a href="https://www.facebook.com/webappdigitalmarketing/"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="https://x.com/thepatternsco"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-x-twitter text-primary text-dark"></i></a>
+                        <a href="https://www.instagram.com/thepatternscompany/"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-instagram text-primary"></i></a>
+                        <a href="https://www.linkedin.com/company/the-patterns-company/mycompany/?viewAsMember=true"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-linkedin-in text-primary"></i></a>
+                        <a href="https://shorturl.at/5zrhd"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-google text-dark"></i></a>
+                        <a href="https://www.youtube.com/@thepatternsstudio"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-2 p-2"><i
+                                class="fab fa-youtube text-dark"></i></a>
+                        <a href="https://in.pinterest.com/thepatternsgroup"
+                            class="btn-light nav-fill btn btn-square rounded-circle me-0 p-2"><i
+                                class="fab fa-pinterest text-dark"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-7 text-center text-md-end copy-right">
+                    <span class="text-light text-primary"><a href="#" class="text-primary"><i
+                                class="fas fa-copyright me-2"></i>Copy Rights </a>|
+                        <a class="text-primary" href="privacy-policy.html">Privacy Policy</a>
+                        , All right reserved.</span>
+                    <span class="text-light">Designed By
+                        <a href="index.html" class="text-primary">THE PATTERNS COMPANY</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+    <style>
+        .charminar {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+        }
+
+        @media (max-width: 992px) {
+            .charminar {
+                position: unset;
+                text-align: center;
+            }
+        }
+    </style>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+    <div class="whatsapp">
+        <a href="https://wa.me/+918500693113">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- JS Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Course Data and Loader -->
+    <script src="js/courses-part1.js"></script>
+    <script src="js/courses-part2.js"></script>
+    <script src="js/courses-part3.js"></script>
+    <script src="js/courses-loader.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+
+</html>
